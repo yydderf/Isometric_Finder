@@ -1,0 +1,1030 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/ydderf/2/cpp/isometric/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+$(VERBOSE).SILENT	build/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+$(VERBOSE)MAKESILENT	build/Makefile	/^$(VERBOSE)MAKESILENT = -s$/;"	m
+%	build/Makefile	/^% : %,v$/;"	t
+%	build/Makefile	/^% : RCS\/%$/;"	t
+%	build/Makefile	/^% : RCS\/%,v$/;"	t
+%	build/Makefile	/^% : SCCS\/s.%$/;"	t
+%	build/Makefile	/^% : s.%$/;"	t
+A	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+ADDITIVE	include/olcPixelGameEngine.h	/^		ADDITIVE,$/;"	e	enum:olc::DecalMode
+ALPHA	include/olcPixelGameEngine.h	/^		enum Mode { NORMAL, MASK, ALPHA, CUSTOM };$/;"	e	enum:olc::Pixel::Mode
+ARCHITECTURE_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
+AddFile	include/olcPixelGameEngine.h	/^	bool ResourcePack::AddFile(const std::string& sFile)$/;"	f	class:olc::ResourcePack	typeref:typename:bool
+ApplicationCleanUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ApplicationCleanUp() override $/;"	f	class:olc::Platform_Emscripten	typeref:typename:olc::rcode
+ApplicationCleanUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ApplicationCleanUp() override { return olc::rcode::OK; }$/;"	f	class:olc::Platform_Windows	typeref:typename:olc::rcode
+ApplicationCleanUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ApplicationCleanUp() override$/;"	f	class:olc::Platform_GLUT	typeref:typename:olc::rcode
+ApplicationCleanUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ApplicationCleanUp() override$/;"	f	class:olc::Platform_Linux	typeref:typename:olc::rcode
+ApplicationStartUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ApplicationStartUp() override $/;"	f	class:olc::Platform_Emscripten	typeref:typename:olc::rcode
+ApplicationStartUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ApplicationStartUp() override { return olc::rcode::OK; }$/;"	f	class:olc::Platform_Windows	typeref:typename:olc::rcode
+ApplicationStartUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ApplicationStartUp() override {$/;"	f	class:olc::Platform_GLUT	typeref:typename:olc::rcode
+ApplicationStartUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ApplicationStartUp() override$/;"	f	class:olc::Platform_Linux	typeref:typename:olc::rcode
+ApplyTexture	include/olcPixelGameEngine.h	/^		void ApplyTexture(uint32_t id) override$/;"	f	class:olc::Renderer_OGL10	typeref:typename:void
+ApplyTexture	include/olcPixelGameEngine.h	/^		void ApplyTexture(uint32_t id) override$/;"	f	class:olc::Renderer_OGL33	typeref:typename:void
+B	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+BACK	include/olcPixelGameEngine.h	/^		BACK, ESCAPE, RETURN, ENTER, PAUSE, SCROLL,$/;"	e	enum:olc::Key
+BLACK	include/olcPixelGameEngine.h	/^		WHITE(255, 255, 255), BLACK(0, 0, 0), BLANK(0, 0, 0, 0);$/;"	v	namespace:olc	typeref:typename:const Pixel
+BLANK	include/olcPixelGameEngine.h	/^		WHITE(255, 255, 255), BLACK(0, 0, 0), BLANK(0, 0, 0, 0);$/;"	v	namespace:olc	typeref:typename:const Pixel
+BLUE	include/olcPixelGameEngine.h	/^		BLUE(0, 0, 255), DARK_BLUE(0, 0, 128), VERY_DARK_BLUE(0, 0, 64),$/;"	v	namespace:olc	typeref:typename:const Pixel
+C	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+CALLSTYLE	include/olcPixelGameEngine.h	/^	#define CALLSTYLE /;"	d
+CALLSTYLE	include/olcPixelGameEngine.h	/^	#define CALLSTYLE$/;"	d
+CAPS_LOCK	include/olcPixelGameEngine.h	/^		CAPS_LOCK, ENUM_END$/;"	e	enum:olc::Key
+CMAKE_AR	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_AR	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/ydderf\/2\/cpp\/isometric\/build$/;"	m
+CMAKE_C11_COMPILE_FEATURES	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")$/;"	v
+CMAKE_C17_COMPILE_FEATURES	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C17_COMPILE_FEATURES "c_std_17")$/;"	v
+CMAKE_C23_COMPILE_FEATURES	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C23_COMPILE_FEATURES "c_std_23")$/;"	v
+CMAKE_C90_COMPILE_FEATURES	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C90_COMPILE_FEATURES "c_std_90;c_function_prototypes")$/;"	v
+CMAKE_C99_COMPILE_FEATURES	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C99_COMPILE_FEATURES "c_std_99;c_restrict;c_variadic_macros")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_C_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_CXX_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMPILER_IS_GNUCC	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCC 1)$/;"	v
+CMAKE_COMPILER_IS_GNUCXX	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCXX 1)$/;"	v
+CMAKE_CROSSCOMPILING	build/CMakeFiles/3.22.1/CMakeSystem.cmake	/^set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	build/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CXX11_COMPILE_FEATURES	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX11_COMPILE_FEATURES "cxx_std_11;cxx_alias_templates;cxx_alignas;cxx_alignof;cxx_att/;"	v
+CMAKE_CXX14_COMPILE_FEATURES	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX14_COMPILE_FEATURES "cxx_std_14;cxx_aggregate_default_initializers;cxx_attribute_de/;"	v
+CMAKE_CXX17_COMPILE_FEATURES	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX17_COMPILE_FEATURES "cxx_std_17")$/;"	v
+CMAKE_CXX20_COMPILE_FEATURES	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX20_COMPILE_FEATURES "cxx_std_20")$/;"	v
+CMAKE_CXX23_COMPILE_FEATURES	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX23_COMPILE_FEATURES "cxx_std_23")$/;"	v
+CMAKE_CXX98_COMPILE_FEATURES	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX98_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters")$/;"	v
+CMAKE_CXX_ABI_COMPILED	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_ABI_COMPILED TRUE)$/;"	v
+CMAKE_CXX_BYTE_ORDER	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_BYTE_ORDER "LITTLE_ENDIAN")$/;"	v
+CMAKE_CXX_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_CXX_COMPILER	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER "\/usr\/bin\/c++")$/;"	v
+CMAKE_CXX_COMPILER_ABI	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ABI "ELF")$/;"	v
+CMAKE_CXX_COMPILER_AR	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
+CMAKE_CXX_COMPILER_ARG1	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ARG1 "")$/;"	v
+CMAKE_CXX_COMPILER_ENV_VAR	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ENV_VAR "CXX")$/;"	v
+CMAKE_CXX_COMPILER_FRONTEND_VARIANT	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "")$/;"	v
+CMAKE_CXX_COMPILER_ID	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
+CMAKE_CXX_COMPILER_ID_RUN	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_CXX_COMPILER_LOADED	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_LOADED 1)$/;"	v
+CMAKE_CXX_COMPILER_RANLIB	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
+CMAKE_CXX_COMPILER_VERSION	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION "11.1.0")$/;"	v
+CMAKE_CXX_COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_CXX_COMPILER_WORKS	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_CXX_COMPILER_WRAPPER	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WRAPPER "")$/;"	v
+CMAKE_CXX_COMPILE_FEATURES	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters;cxx_std_11;cxx_alias/;"	v
+CMAKE_CXX_EXTENSIONS_COMPUTED_DEFAULT	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_EXTENSIONS_COMPUTED_DEFAULT "ON")$/;"	v
+CMAKE_CXX_IGNORE_EXTENSIONS	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IGNORE_EXTENSIONS inl;h;hpp;HPP;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/include\/c++\/11.1.0;\/usr\/include\/c++\/11./;"	v
+CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/11.1.0;\/usr\/lib/;"	v
+CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_CXX_IMPLICIT_LINK_LIBRARIES	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_SCAN	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
+CMAKE_CXX_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE 30)$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)$/;"	v
+CMAKE_CXX_PLATFORM_ID	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_PLATFORM_ID "Linux")$/;"	v
+CMAKE_CXX_SIMULATE_ID	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_ID "")$/;"	v
+CMAKE_CXX_SIMULATE_VERSION	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_VERSION "")$/;"	v
+CMAKE_CXX_SIZEOF_DATA_PTR	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_CXX_SOURCE_FILE_EXTENSIONS	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SOURCE_FILE_EXTENSIONS C;M;c++;cc;cpp;cxx;m;mm;mpp;CPP;ixx;cppm)$/;"	v
+CMAKE_CXX_STANDARD	CMakeLists.txt	/^set(CMAKE_CXX_STANDARD 17)$/;"	v
+CMAKE_CXX_STANDARD_COMPUTED_DEFAULT	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "17")$/;"	v
+CMAKE_CXX_STANDARD_REQUIRED	CMakeLists.txt	/^set(CMAKE_CXX_STANDARD_REQUIRED ON)$/;"	v
+CMAKE_C_ABI_COMPILED	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_ABI_COMPILED TRUE)$/;"	v
+CMAKE_C_BYTE_ORDER	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_BYTE_ORDER "LITTLE_ENDIAN")$/;"	v
+CMAKE_C_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_C_COMPILER	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER "\/usr\/bin\/cc")$/;"	v
+CMAKE_C_COMPILER_ABI	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ABI "ELF")$/;"	v
+CMAKE_C_COMPILER_AR	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
+CMAKE_C_COMPILER_ARG1	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ARG1 "")$/;"	v
+CMAKE_C_COMPILER_ENV_VAR	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ENV_VAR "CC")$/;"	v
+CMAKE_C_COMPILER_FRONTEND_VARIANT	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_FRONTEND_VARIANT "")$/;"	v
+CMAKE_C_COMPILER_ID	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID "GNU")$/;"	v
+CMAKE_C_COMPILER_ID_RUN	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_C_COMPILER_LOADED	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_LOADED 1)$/;"	v
+CMAKE_C_COMPILER_RANLIB	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
+CMAKE_C_COMPILER_VERSION	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION "11.1.0")$/;"	v
+CMAKE_C_COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_C_COMPILER_WORKS	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_C_COMPILER_WRAPPER	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WRAPPER "")$/;"	v
+CMAKE_C_COMPILE_FEATURES	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILE_FEATURES "c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macr/;"	v
+CMAKE_C_EXTENSIONS_COMPUTED_DEFAULT	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_EXTENSIONS_COMPUTED_DEFAULT "ON")$/;"	v
+CMAKE_C_IGNORE_EXTENSIONS	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_IGNORE_EXTENSIONS h;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/11.1.0\/include;/;"	v
+CMAKE_C_IMPLICIT_LINK_DIRECTORIES	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/11.1.0;\/usr\/lib;\//;"	v
+CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_C_IMPLICIT_LINK_LIBRARIES	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")$/;"	v
+CMAKE_C_INCLUDE_REGEX_COMPLAIN	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_SCAN	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
+CMAKE_C_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_C_LINKER_PREFERENCE	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_LINKER_PREFERENCE 10)$/;"	v
+CMAKE_C_PLATFORM_ID	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_PLATFORM_ID "Linux")$/;"	v
+CMAKE_C_SIMULATE_ID	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_ID "")$/;"	v
+CMAKE_C_SIMULATE_VERSION	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_VERSION "")$/;"	v
+CMAKE_C_SIZEOF_DATA_PTR	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_C_SOURCE_FILE_EXTENSIONS	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_SOURCE_FILE_EXTENSIONS c;m)$/;"	v
+CMAKE_C_STANDARD_COMPUTED_DEFAULT	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "17")$/;"	v
+CMAKE_DEPENDS_DEPENDENCY_FILES	build/CMakeFiles/Isometric_Finder.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_DEPENDENCY_FILES$/;"	v
+CMAKE_DEPENDS_GENERATOR	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")$/;"	v
+CMAKE_DEPENDS_IN_PROJECT_ONLY	build/CMakeFiles/Isometric_Finder.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)$/;"	v
+CMAKE_DEPENDS_LANGUAGES	build/CMakeFiles/Isometric_Finder.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPEND_INFO_FILES	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPEND_INFO_FILES$/;"	v
+CMAKE_FORCE_UNIX_PATHS	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	build/CMakeFiles/Isometric_Finder.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_HOST_SYSTEM	build/CMakeFiles/3.22.1/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM "Linux-5.10.87-1-lts")$/;"	v
+CMAKE_HOST_SYSTEM_NAME	build/CMakeFiles/3.22.1/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_HOST_SYSTEM_PROCESSOR	build/CMakeFiles/3.22.1/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_HOST_SYSTEM_VERSION	build/CMakeFiles/3.22.1/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_VERSION "5.10.87-1-lts")$/;"	v
+CMAKE_INSTALL_COMPONENT	build/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
+CMAKE_INSTALL_COMPONENT	build/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
+CMAKE_INSTALL_CONFIG_NAME	build/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "")$/;"	v
+CMAKE_INSTALL_MANIFEST	build/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")$/;"	v
+CMAKE_INSTALL_MANIFEST	build/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")$/;"	v
+CMAKE_INSTALL_PREFIX	build/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
+CMAKE_INSTALL_SO_NO_EXE	build/cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "0")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_C_COMPILER_ABI}")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_CXX_COMPILER_ABI}")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LINKER	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_LINKER	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_MAKEFILE_DEPENDS	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_DEPENDS$/;"	v
+CMAKE_MAKEFILE_OUTPUTS	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_OUTPUTS$/;"	v
+CMAKE_MAKEFILE_PRODUCTS	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_PRODUCTS$/;"	v
+CMAKE_MT	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_MT	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_OBJDUMP	build/cmake_install.cmake	/^  set(CMAKE_OBJDUMP "\/usr\/bin\/objdump")$/;"	v
+CMAKE_RANLIB	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RANLIB	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_BINARY	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/home\/ydderf\/2\/cpp\/isometric\/build")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_SOURCE	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/home\/ydderf\/2\/cpp\/isometric")$/;"	v
+CMAKE_SIZEOF_VOID_P	build/CMakeFiles/3.22.1/CMakeCCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SIZEOF_VOID_P	build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_CXX_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/ydderf\/2\/cpp\/isometric$/;"	m
+CMAKE_SYSTEM	build/CMakeFiles/3.22.1/CMakeSystem.cmake	/^set(CMAKE_SYSTEM "Linux-5.10.87-1-lts")$/;"	v
+CMAKE_SYSTEM_LOADED	build/CMakeFiles/3.22.1/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_LOADED 1)$/;"	v
+CMAKE_SYSTEM_NAME	build/CMakeFiles/3.22.1/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_SYSTEM_PROCESSOR	build/CMakeFiles/3.22.1/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_SYSTEM_VERSION	build/CMakeFiles/3.22.1/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_VERSION "5.10.87-1-lts")$/;"	v
+CMAKE_TARGET_LINKED_INFO_FILES	build/CMakeFiles/Isometric_Finder.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+COMMA	include/olcPixelGameEngine.h	/^		EQUALS, COMMA, MINUS,$/;"	e	enum:olc::Key
+COMPILER_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
+COMPILER_VERSION	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION /;"	d	file:
+COMPILER_VERSION	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL_STR /;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL_STR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+CTRL	include/olcPixelGameEngine.h	/^		SPACE, TAB, SHIFT, CTRL, INS, DEL, HOME, END, PGUP, PGDN,$/;"	e	enum:olc::Key
+CUSTOM	include/olcPixelGameEngine.h	/^		enum Mode { NORMAL, MASK, ALPHA, CUSTOM };$/;"	e	enum:olc::Pixel::Mode
+CXX_STD	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#      define CXX_STD /;"	d	file:
+CXX_STD	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#    define CXX_STD /;"	d	file:
+CXX_STD	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define CXX_STD /;"	d	file:
+CYAN	include/olcPixelGameEngine.h	/^		CYAN(0, 255, 255), DARK_CYAN(0, 128, 128), VERY_DARK_CYAN(0, 64, 64),$/;"	v	namespace:olc	typeref:typename:const Pixel
+C_VERSION	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION /;"	d	file:
+C_VERSION	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION$/;"	d	file:
+C_VERSION	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define C_VERSION /;"	d	file:
+Clear	include/olcPixelGameEngine.h	/^	void PixelGameEngine::Clear(Pixel p)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+ClearBuffer	include/olcPixelGameEngine.h	/^		void ClearBuffer(olc::Pixel p, bool bDepth) override$/;"	f	class:olc::Renderer_OGL10	typeref:typename:void
+ClearBuffer	include/olcPixelGameEngine.h	/^		void ClearBuffer(olc::Pixel p, bool bDepth) override$/;"	f	class:olc::Renderer_OGL33	typeref:typename:void
+ClearBuffer	include/olcPixelGameEngine.h	/^	void PixelGameEngine::ClearBuffer(Pixel p, bool bDepth)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+Construct	include/olcPixelGameEngine.h	/^	olc::rcode PixelGameEngine::Construct(int32_t screen_w, int32_t screen_h, int32_t pixel_w, int3/;"	f	class:olc::PixelGameEngine	typeref:typename:olc::rcode
+ConvertS2W	include/olcPixelGameEngine.h	/^		std::wstring ConvertS2W(std::string s)$/;"	f	class:olc::ImageLoader_GDIPlus	typeref:typename:std::wstring
+ConvertS2W	include/olcPixelGameEngine.h	/^		std::wstring ConvertS2W(std::string s)$/;"	f	class:olc::Platform_Windows	typeref:typename:std::wstring
+Create	include/olcPixelGameEngine.h	/^	void Renderable::Create(uint32_t width, uint32_t height, bool filter, bool clamp)$/;"	f	class:olc::Renderable	typeref:typename:void
+CreateDevice	include/olcPixelGameEngine.h	/^		olc::rcode CreateDevice(std::vector<void*> params, bool bFullScreen, bool bVSYNC) override$/;"	f	class:olc::Renderer_OGL10	typeref:typename:olc::rcode
+CreateDevice	include/olcPixelGameEngine.h	/^		olc::rcode CreateDevice(std::vector<void*> params, bool bFullScreen, bool bVSYNC) override$/;"	f	class:olc::Renderer_OGL33	typeref:typename:olc::rcode
+CreateGraphics	include/olcPixelGameEngine.h	/^		virtual olc::rcode CreateGraphics(bool bFullScreen, bool bEnableVSYNC, const olc::vi2d& vViewP/;"	f	class:olc::Platform_Emscripten	typeref:typename:olc::rcode
+CreateGraphics	include/olcPixelGameEngine.h	/^		virtual olc::rcode CreateGraphics(bool bFullScreen, bool bEnableVSYNC, const olc::vi2d& vViewP/;"	f	class:olc::Platform_GLUT	typeref:typename:olc::rcode
+CreateGraphics	include/olcPixelGameEngine.h	/^		virtual olc::rcode CreateGraphics(bool bFullScreen, bool bEnableVSYNC, const olc::vi2d& vViewP/;"	f	class:olc::Platform_Linux	typeref:typename:olc::rcode
+CreateGraphics	include/olcPixelGameEngine.h	/^		virtual olc::rcode CreateGraphics(bool bFullScreen, bool bEnableVSYNC, const olc::vi2d& vViewP/;"	f	class:olc::Platform_Windows	typeref:typename:olc::rcode
+CreateLayer	include/olcPixelGameEngine.h	/^	uint32_t PixelGameEngine::CreateLayer()$/;"	f	class:olc::PixelGameEngine	typeref:typename:uint32_t
+CreateTexture	include/olcPixelGameEngine.h	/^		uint32_t CreateTexture(const uint32_t width, const uint32_t height, const bool filtered, const/;"	f	class:olc::Renderer_OGL10	typeref:typename:uint32_t
+CreateTexture	include/olcPixelGameEngine.h	/^		uint32_t CreateTexture(const uint32_t width, const uint32_t height, const bool filtered, const/;"	f	class:olc::Renderer_OGL33	typeref:typename:uint32_t
+CreateWindowPane	include/olcPixelGameEngine.h	/^		virtual olc::rcode CreateWindowPane(const olc::vi2d& vWindowPos, olc::vi2d& vWindowSize, bool /;"	f	class:olc::Platform_Emscripten	typeref:typename:olc::rcode
+CreateWindowPane	include/olcPixelGameEngine.h	/^		virtual olc::rcode CreateWindowPane(const olc::vi2d& vWindowPos, olc::vi2d& vWindowSize, bool /;"	f	class:olc::Platform_GLUT	typeref:typename:olc::rcode
+CreateWindowPane	include/olcPixelGameEngine.h	/^		virtual olc::rcode CreateWindowPane(const olc::vi2d& vWindowPos, olc::vi2d& vWindowSize, bool /;"	f	class:olc::Platform_Linux	typeref:typename:olc::rcode
+CreateWindowPane	include/olcPixelGameEngine.h	/^		virtual olc::rcode CreateWindowPane(const olc::vi2d& vWindowPos, olc::vi2d& vWindowSize, bool /;"	f	class:olc::Platform_Windows	typeref:typename:olc::rcode
+D	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+DARK_BLUE	include/olcPixelGameEngine.h	/^		BLUE(0, 0, 255), DARK_BLUE(0, 0, 128), VERY_DARK_BLUE(0, 0, 64),$/;"	v	namespace:olc	typeref:typename:const Pixel
+DARK_CYAN	include/olcPixelGameEngine.h	/^		CYAN(0, 255, 255), DARK_CYAN(0, 128, 128), VERY_DARK_CYAN(0, 64, 64),$/;"	v	namespace:olc	typeref:typename:const Pixel
+DARK_GREEN	include/olcPixelGameEngine.h	/^		GREEN(0, 255, 0), DARK_GREEN(0, 128, 0), VERY_DARK_GREEN(0, 64, 0),$/;"	v	namespace:olc	typeref:typename:const Pixel
+DARK_GREY	include/olcPixelGameEngine.h	/^		GREY(192, 192, 192), DARK_GREY(128, 128, 128), VERY_DARK_GREY(64, 64, 64),$/;"	v	namespace:olc	typeref:typename:const Pixel
+DARK_MAGENTA	include/olcPixelGameEngine.h	/^		MAGENTA(255, 0, 255), DARK_MAGENTA(128, 0, 128), VERY_DARK_MAGENTA(64, 0, 64),$/;"	v	namespace:olc	typeref:typename:const Pixel
+DARK_RED	include/olcPixelGameEngine.h	/^		RED(255, 0, 0), DARK_RED(128, 0, 0), VERY_DARK_RED(64, 0, 0),$/;"	v	namespace:olc	typeref:typename:const Pixel
+DARK_YELLOW	include/olcPixelGameEngine.h	/^		YELLOW(255, 255, 0), DARK_YELLOW(128, 128, 0), VERY_DARK_YELLOW(64, 64, 0),$/;"	v	namespace:olc	typeref:typename:const Pixel
+DEC	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
+DEC	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
+DEL	include/olcPixelGameEngine.h	/^		SPACE, TAB, SHIFT, CTRL, INS, DEL, HOME, END, PGUP, PGDN,$/;"	e	enum:olc::Key
+DOWN	include/olcPixelGameEngine.h	/^		UP, DOWN, LEFT, RIGHT,$/;"	e	enum:olc::Key
+Decal	include/olcPixelGameEngine.h	/^	Decal::Decal(const uint32_t nExistingTextureResource, olc::Sprite* spr)$/;"	f	class:olc::Decal
+Decal	include/olcPixelGameEngine.h	/^	Decal::Decal(olc::Sprite* spr, bool filter, bool clamp)$/;"	f	class:olc::Decal
+Decal	include/olcPixelGameEngine.h	/^	class Decal$/;"	c	namespace:olc
+Decal	include/olcPixelGameEngine.h	/^	olc::Decal* Renderable::Decal() const$/;"	f	class:olc::Renderable	typeref:typename:olc::Decal *
+DecalInstance	include/olcPixelGameEngine.h	/^	struct DecalInstance$/;"	s	namespace:olc
+DecalMode	include/olcPixelGameEngine.h	/^	enum class DecalMode$/;"	g	namespace:olc
+DeleteTexture	include/olcPixelGameEngine.h	/^		uint32_t DeleteTexture(const uint32_t id) override$/;"	f	class:olc::Renderer_OGL10	typeref:typename:uint32_t
+DeleteTexture	include/olcPixelGameEngine.h	/^		uint32_t DeleteTexture(const uint32_t id) override$/;"	f	class:olc::Renderer_OGL33	typeref:typename:uint32_t
+DestroyDevice	include/olcPixelGameEngine.h	/^		olc::rcode DestroyDevice() override$/;"	f	class:olc::Renderer_OGL10	typeref:typename:olc::rcode
+DestroyDevice	include/olcPixelGameEngine.h	/^		olc::rcode DestroyDevice() override$/;"	f	class:olc::Renderer_OGL33	typeref:typename:olc::rcode
+DisplayFrame	include/olcPixelGameEngine.h	/^		void DisplayFrame() override$/;"	f	class:olc::Renderer_OGL10	typeref:typename:void
+DisplayFrame	include/olcPixelGameEngine.h	/^		void DisplayFrame() override$/;"	f	class:olc::Renderer_OGL33	typeref:typename:void
+Draw	include/olcPixelGameEngine.h	/^	bool PixelGameEngine::Draw(const olc::vi2d& pos, Pixel p)$/;"	f	class:olc::PixelGameEngine	typeref:typename:bool
+Draw	include/olcPixelGameEngine.h	/^	bool PixelGameEngine::Draw(int32_t x, int32_t y, Pixel p)$/;"	f	class:olc::PixelGameEngine	typeref:typename:bool
+DrawCircle	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawCircle(const olc::vi2d& pos, int32_t radius, Pixel p, uint8_t mask)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawCircle	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawCircle(int32_t x, int32_t y, int32_t radius, Pixel p, uint8_t mask)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawDecal	include/olcPixelGameEngine.h	/^		void DrawDecal(const olc::DecalInstance& decal) override$/;"	f	class:olc::Renderer_OGL10	typeref:typename:void
+DrawDecal	include/olcPixelGameEngine.h	/^		void DrawDecal(const olc::DecalInstance& decal) override$/;"	f	class:olc::Renderer_OGL33	typeref:typename:void
+DrawDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawDecal(const olc::vf2d& pos, olc::Decal* decal, const olc::vf2d& scale/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawExplicitDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawExplicitDecal(olc::Decal* decal, const olc::vf2d* pos, const olc::vf2/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawFunct	include/olcPixelGameEngine.h	/^		static void DrawFunct() {$/;"	f	class:olc::Platform_GLUT	typeref:typename:void
+DrawLayerQuad	include/olcPixelGameEngine.h	/^		void DrawLayerQuad(const olc::vf2d& offset, const olc::vf2d& scale, const olc::Pixel tint) ove/;"	f	class:olc::Renderer_OGL10	typeref:typename:void
+DrawLayerQuad	include/olcPixelGameEngine.h	/^		void DrawLayerQuad(const olc::vf2d& offset, const olc::vf2d& scale, const olc::Pixel tint) ove/;"	f	class:olc::Renderer_OGL33	typeref:typename:void
+DrawLine	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawLine(const olc::vi2d& pos1, const olc::vi2d& pos2, Pixel p, uint32_t /;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawLine	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawLine(int32_t x1, int32_t y1, int32_t x2, int32_t y2, Pixel p, uint32_/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawLineDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawLineDecal(const olc::vf2d& pos1, const olc::vf2d& pos2, Pixel p)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawPartialDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawPartialDecal(const olc::vf2d& pos, const olc::vf2d& size, olc::Decal*/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawPartialDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawPartialDecal(const olc::vf2d& pos, olc::Decal* decal, const olc::vf2d/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawPartialRotatedDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawPartialRotatedDecal(const olc::vf2d& pos, olc::Decal* decal, const fl/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawPartialSprite	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawPartialSprite(const olc::vi2d& pos, Sprite* sprite, const olc::vi2d& /;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawPartialSprite	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawPartialSprite(int32_t x, int32_t y, Sprite* sprite, int32_t ox, int32/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawPartialWarpedDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawPartialWarpedDecal(olc::Decal* decal, const olc::vf2d(&pos)[4], const/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawPartialWarpedDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawPartialWarpedDecal(olc::Decal* decal, const olc::vf2d* pos, const olc/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawPartialWarpedDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawPartialWarpedDecal(olc::Decal* decal, const std::array<olc::vf2d, 4>&/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawPolygonDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawPolygonDecal(olc::Decal* decal, const std::vector<olc::vf2d>& pos, co/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawRect	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawRect(const olc::vi2d& pos, const olc::vi2d& size, Pixel p)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawRect	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawRect(int32_t x, int32_t y, int32_t w, int32_t h, Pixel p)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawRotatedDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawRotatedDecal(const olc::vf2d& pos, olc::Decal* decal, const float fAn/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawRotatedStringDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawRotatedStringDecal(const olc::vf2d& pos, const std::string& sText, co/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawRotatedStringPropDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawRotatedStringPropDecal(const olc::vf2d& pos, const std::string& sText/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawSprite	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawSprite(const olc::vi2d& pos, Sprite* sprite, uint32_t scale, uint8_t /;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawSprite	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawSprite(int32_t x, int32_t y, Sprite* sprite, uint32_t scale, uint8_t /;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawString	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawString(const olc::vi2d& pos, const std::string& sText, Pixel col, uin/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawString	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawString(int32_t x, int32_t y, const std::string& sText, Pixel col, uin/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawStringDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawStringDecal(const olc::vf2d& pos, const std::string& sText, const Pix/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawStringProp	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawStringProp(const olc::vi2d& pos, const std::string& sText, Pixel col,/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawStringProp	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawStringProp(int32_t x, int32_t y, const std::string& sText, Pixel col,/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawStringPropDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawStringPropDecal(const olc::vf2d& pos, const std::string& sText, const/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawTriangle	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawTriangle(const olc::vi2d& pos1, const olc::vi2d& pos2, const olc::vi2/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawTriangle	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawTriangle(int32_t x1, int32_t y1, int32_t x2, int32_t y2, int32_t x3, /;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawWarpedDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawWarpedDecal(olc::Decal* decal, const olc::vf2d(&pos)[4], const olc::P/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawWarpedDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawWarpedDecal(olc::Decal* decal, const olc::vf2d* pos, const olc::Pixel/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+DrawWarpedDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::DrawWarpedDecal(olc::Decal* decal, const std::array<olc::vf2d, 4>& pos, c/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+Duplicate	include/olcPixelGameEngine.h	/^	olc::Sprite* Sprite::Duplicate()$/;"	f	class:olc::Sprite	typeref:typename:olc::Sprite *
+Duplicate	include/olcPixelGameEngine.h	/^	olc::Sprite* Sprite::Duplicate(const olc::vi2d& vPos, const olc::vi2d& vSize)$/;"	f	class:olc::Sprite	typeref:typename:olc::Sprite *
+E	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+END	include/olcPixelGameEngine.h	/^		SPACE, TAB, SHIFT, CTRL, INS, DEL, HOME, END, PGUP, PGDN,$/;"	e	enum:olc::Key
+ENTER	include/olcPixelGameEngine.h	/^		BACK, ESCAPE, RETURN, ENTER, PAUSE, SCROLL,$/;"	e	enum:olc::Key
+ENUM_END	include/olcPixelGameEngine.h	/^		CAPS_LOCK, ENUM_END$/;"	e	enum:olc::Key
+EQUALS	build/Makefile	/^EQUALS = =$/;"	m
+EQUALS	include/olcPixelGameEngine.h	/^		EQUALS, COMMA, MINUS,$/;"	e	enum:olc::Key
+ESCAPE	include/olcPixelGameEngine.h	/^		BACK, ESCAPE, RETURN, ENTER, PAUSE, SCROLL,$/;"	e	enum:olc::Key
+EnableLayer	include/olcPixelGameEngine.h	/^	void PixelGameEngine::EnableLayer(uint8_t layer, bool b)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+EngineThread	include/olcPixelGameEngine.h	/^	void PixelGameEngine::EngineThread()$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+ExitMainLoop	include/olcPixelGameEngine.h	/^		static void ExitMainLoop() {$/;"	f	class:olc::Platform_GLUT	typeref:typename:void
+F	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+F1	include/olcPixelGameEngine.h	/^		F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,$/;"	e	enum:olc::Key
+F10	include/olcPixelGameEngine.h	/^		F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,$/;"	e	enum:olc::Key
+F11	include/olcPixelGameEngine.h	/^		F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,$/;"	e	enum:olc::Key
+F12	include/olcPixelGameEngine.h	/^		F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,$/;"	e	enum:olc::Key
+F2	include/olcPixelGameEngine.h	/^		F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,$/;"	e	enum:olc::Key
+F3	include/olcPixelGameEngine.h	/^		F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,$/;"	e	enum:olc::Key
+F4	include/olcPixelGameEngine.h	/^		F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,$/;"	e	enum:olc::Key
+F5	include/olcPixelGameEngine.h	/^		F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,$/;"	e	enum:olc::Key
+F6	include/olcPixelGameEngine.h	/^		F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,$/;"	e	enum:olc::Key
+F7	include/olcPixelGameEngine.h	/^		F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,$/;"	e	enum:olc::Key
+F8	include/olcPixelGameEngine.h	/^		F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,$/;"	e	enum:olc::Key
+F9	include/olcPixelGameEngine.h	/^		F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,$/;"	e	enum:olc::Key
+FAIL	include/olcPixelGameEngine.h	/^	enum rcode { FAIL = 0, OK = 1, NO_FILE = -1 };$/;"	e	enum:olc::rcode
+FillCircle	include/olcPixelGameEngine.h	/^	void PixelGameEngine::FillCircle(const olc::vi2d& pos, int32_t radius, Pixel p)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+FillCircle	include/olcPixelGameEngine.h	/^	void PixelGameEngine::FillCircle(int32_t x, int32_t y, int32_t radius, Pixel p)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+FillRect	include/olcPixelGameEngine.h	/^	void PixelGameEngine::FillRect(const olc::vi2d& pos, const olc::vi2d& size, Pixel p)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+FillRect	include/olcPixelGameEngine.h	/^	void PixelGameEngine::FillRect(int32_t x, int32_t y, int32_t w, int32_t h, Pixel p)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+FillRectDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::FillRectDecal(const olc::vf2d& pos, const olc::vf2d& size, const olc::Pix/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+FillTriangle	include/olcPixelGameEngine.h	/^	void PixelGameEngine::FillTriangle(const olc::vi2d& pos1, const olc::vi2d& pos2, const olc::vi2/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+FillTriangle	include/olcPixelGameEngine.h	/^	void PixelGameEngine::FillTriangle(int32_t x1, int32_t y1, int32_t x2, int32_t y2, int32_t x3, /;"	f	class:olc::PixelGameEngine	typeref:typename:void
+Flip	include/olcPixelGameEngine.h	/^		enum Flip { NONE = 0, HORIZ = 1, VERT = 2 };$/;"	g	class:olc::Sprite
+G	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+GDIPlusStartup	include/olcPixelGameEngine.h	/^		GDIPlusStartup()$/;"	f	class:olc::GDIPlusStartup
+GDIPlusStartup	include/olcPixelGameEngine.h	/^	static class GDIPlusStartup$/;"	c	namespace:olc
+GL_CLAMP	include/olcPixelGameEngine.h	/^	#define GL_CLAMP /;"	d
+GL_GLEXT_PROTOTYPES	include/olcPixelGameEngine.h	/^	#define GL_GLEXT_PROTOTYPES$/;"	d
+GL_SILENCE_DEPRECATION	include/olcPixelGameEngine.h	/^			#define GL_SILENCE_DEPRECATION$/;"	d
+GL_SILENCE_DEPRECATION	include/olcPixelGameEngine.h	/^	#define GL_SILENCE_DEPRECATION$/;"	d
+GLchar	include/olcPixelGameEngine.h	/^	typedef char GLchar;$/;"	t	namespace:olc	typeref:typename:char
+GLsizeiptr	include/olcPixelGameEngine.h	/^	typedef ptrdiff_t GLsizeiptr;$/;"	t	namespace:olc	typeref:typename:ptrdiff_t
+GREEN	include/olcPixelGameEngine.h	/^		GREEN(0, 255, 0), DARK_GREEN(0, 128, 0), VERY_DARK_GREEN(0, 64, 0),$/;"	v	namespace:olc	typeref:typename:const Pixel
+GREY	include/olcPixelGameEngine.h	/^		GREY(192, 192, 192), DARK_GREY(128, 128, 128), VERY_DARK_GREY(64, 64, 64),$/;"	v	namespace:olc	typeref:typename:const Pixel
+GetData	include/olcPixelGameEngine.h	/^	Pixel* Sprite::GetData()$/;"	f	class:olc::Sprite	typeref:typename:Pixel *
+GetDrawTarget	include/olcPixelGameEngine.h	/^	Sprite* PixelGameEngine::GetDrawTarget() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:Sprite *
+GetDrawTargetHeight	include/olcPixelGameEngine.h	/^	int32_t PixelGameEngine::GetDrawTargetHeight() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:int32_t
+GetDrawTargetWidth	include/olcPixelGameEngine.h	/^	int32_t PixelGameEngine::GetDrawTargetWidth() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:int32_t
+GetElapsedTime	include/olcPixelGameEngine.h	/^	float PixelGameEngine::GetElapsedTime() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:float
+GetFPS	include/olcPixelGameEngine.h	/^	uint32_t PixelGameEngine::GetFPS() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:uint32_t
+GetFileBuffer	include/olcPixelGameEngine.h	/^	ResourceBuffer ResourcePack::GetFileBuffer(const std::string& sFile)$/;"	f	class:olc::ResourcePack	typeref:typename:ResourceBuffer
+GetFontSprite	include/olcPixelGameEngine.h	/^	olc::Sprite* PixelGameEngine::GetFontSprite()$/;"	f	class:olc::PixelGameEngine	typeref:typename:olc::Sprite *
+GetKey	include/olcPixelGameEngine.h	/^	HWButton PixelGameEngine::GetKey(Key k) const$/;"	f	class:olc::PixelGameEngine	typeref:typename:HWButton
+GetLayers	include/olcPixelGameEngine.h	/^	std::vector<LayerDesc>& PixelGameEngine::GetLayers()$/;"	f	class:olc::PixelGameEngine	typeref:typename:std::vector<LayerDesc> &
+GetMouse	include/olcPixelGameEngine.h	/^	HWButton PixelGameEngine::GetMouse(uint32_t b) const$/;"	f	class:olc::PixelGameEngine	typeref:typename:HWButton
+GetMousePos	include/olcPixelGameEngine.h	/^	const olc::vi2d& PixelGameEngine::GetMousePos() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:const olc::vi2d &
+GetMouseWheel	include/olcPixelGameEngine.h	/^	int32_t PixelGameEngine::GetMouseWheel() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:int32_t
+GetMouseX	include/olcPixelGameEngine.h	/^	int32_t PixelGameEngine::GetMouseX() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:int32_t
+GetMouseY	include/olcPixelGameEngine.h	/^	int32_t PixelGameEngine::GetMouseY() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:int32_t
+GetPixel	include/olcPixelGameEngine.h	/^	Pixel Sprite::GetPixel(const olc::vi2d& a) const$/;"	f	class:olc::Sprite	typeref:typename:Pixel
+GetPixel	include/olcPixelGameEngine.h	/^	Pixel Sprite::GetPixel(int32_t x, int32_t y) const$/;"	f	class:olc::Sprite	typeref:typename:Pixel
+GetPixelMode	include/olcPixelGameEngine.h	/^	Pixel::Mode PixelGameEngine::GetPixelMode()$/;"	f	class:olc::PixelGameEngine	typeref:typename:Pixel::Mode
+GetPixelSize	include/olcPixelGameEngine.h	/^	const olc::vi2d& PixelGameEngine::GetPixelSize() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:const olc::vi2d &
+GetScreenPixelSize	include/olcPixelGameEngine.h	/^	const olc::vi2d& PixelGameEngine::GetScreenPixelSize() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:const olc::vi2d &
+GetTextSize	include/olcPixelGameEngine.h	/^	olc::vi2d PixelGameEngine::GetTextSize(const std::string& s)$/;"	f	class:olc::PixelGameEngine	typeref:typename:olc::vi2d
+GetTextSizeProp	include/olcPixelGameEngine.h	/^	olc::vi2d PixelGameEngine::GetTextSizeProp(const std::string& s)$/;"	f	class:olc::PixelGameEngine	typeref:typename:olc::vi2d
+GetWindowMouse	include/olcPixelGameEngine.h	/^	const olc::vi2d& PixelGameEngine::GetWindowMouse() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:const olc::vi2d &
+GetWindowSize	include/olcPixelGameEngine.h	/^	const olc::vi2d& PixelGameEngine::GetWindowSize() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:const olc::vi2d &
+GradientFillRectDecal	include/olcPixelGameEngine.h	/^	void PixelGameEngine::GradientFillRectDecal(const olc::vf2d& pos, const olc::vf2d& size, const /;"	f	class:olc::PixelGameEngine	typeref:typename:void
+H	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+HEX	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
+HEX	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
+HOME	include/olcPixelGameEngine.h	/^		SPACE, TAB, SHIFT, CTRL, INS, DEL, HOME, END, PGUP, PGDN,$/;"	e	enum:olc::Key
+HORIZ	include/olcPixelGameEngine.h	/^		enum Flip { NONE = 0, HORIZ = 1, VERT = 2 };$/;"	e	enum:olc::Sprite::Flip
+HWButton	include/olcPixelGameEngine.h	/^	struct HWButton$/;"	s	namespace:olc
+HandleSystemEvent	include/olcPixelGameEngine.h	/^		virtual olc::rcode HandleSystemEvent() override { return olc::rcode::FAIL; }$/;"	f	class:olc::Platform_Windows	typeref:typename:olc::rcode
+HandleSystemEvent	include/olcPixelGameEngine.h	/^		virtual olc::rcode HandleSystemEvent() override$/;"	f	class:olc::Platform_Emscripten	typeref:typename:olc::rcode
+HandleSystemEvent	include/olcPixelGameEngine.h	/^		virtual olc::rcode HandleSystemEvent() override$/;"	f	class:olc::Platform_GLUT	typeref:typename:olc::rcode
+HandleSystemEvent	include/olcPixelGameEngine.h	/^		virtual olc::rcode HandleSystemEvent() override$/;"	f	class:olc::Platform_Linux	typeref:typename:olc::rcode
+I	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+ID_VOID_MAIN	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
+ILLUMINATE	include/olcPixelGameEngine.h	/^		ILLUMINATE,$/;"	e	enum:olc::DecalMode
+INS	include/olcPixelGameEngine.h	/^		SPACE, TAB, SHIFT, CTRL, INS, DEL, HOME, END, PGUP, PGDN,$/;"	e	enum:olc::Key
+ImageLoader	include/olcPixelGameEngine.h	/^	class ImageLoader$/;"	c	namespace:olc
+ImageLoader_GDIPlus	include/olcPixelGameEngine.h	/^		ImageLoader_GDIPlus() : ImageLoader()$/;"	f	class:olc::ImageLoader_GDIPlus
+ImageLoader_GDIPlus	include/olcPixelGameEngine.h	/^	class ImageLoader_GDIPlus : public olc::ImageLoader$/;"	c	namespace:olc
+ImageLoader_LibPNG	include/olcPixelGameEngine.h	/^		ImageLoader_LibPNG() : ImageLoader()$/;"	f	class:olc::ImageLoader_LibPNG
+ImageLoader_LibPNG	include/olcPixelGameEngine.h	/^	class ImageLoader_LibPNG : public olc::ImageLoader$/;"	c	namespace:olc
+ImageLoader_STB	include/olcPixelGameEngine.h	/^		ImageLoader_STB() : ImageLoader()$/;"	f	class:olc::ImageLoader_STB
+ImageLoader_STB	include/olcPixelGameEngine.h	/^	class ImageLoader_STB : public olc::ImageLoader$/;"	c	namespace:olc
+IsFocused	include/olcPixelGameEngine.h	/^	bool PixelGameEngine::IsFocused() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:bool
+IsometricDemo	src/Isometric_Finder.cpp	/^	IsometricDemo()$/;"	f	class:IsometricDemo	file:
+IsometricDemo	src/Isometric_Finder.cpp	/^class IsometricDemo : public olc::PixelGameEngine$/;"	c	file:
+Isometric_Finder	CMakeLists.txt	/^project(Isometric_Finder)$/;"	p
+Isometric_Finder	build/Makefile	/^Isometric_Finder: cmake_check_build_system$/;"	t
+Isometric_Finder/fast	build/Makefile	/^Isometric_Finder\/fast:$/;"	t
+J	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+K	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+K0	include/olcPixelGameEngine.h	/^		K0, K1, K2, K3, K4, K5, K6, K7, K8, K9,$/;"	e	enum:olc::Key
+K1	include/olcPixelGameEngine.h	/^		K0, K1, K2, K3, K4, K5, K6, K7, K8, K9,$/;"	e	enum:olc::Key
+K2	include/olcPixelGameEngine.h	/^		K0, K1, K2, K3, K4, K5, K6, K7, K8, K9,$/;"	e	enum:olc::Key
+K3	include/olcPixelGameEngine.h	/^		K0, K1, K2, K3, K4, K5, K6, K7, K8, K9,$/;"	e	enum:olc::Key
+K4	include/olcPixelGameEngine.h	/^		K0, K1, K2, K3, K4, K5, K6, K7, K8, K9,$/;"	e	enum:olc::Key
+K5	include/olcPixelGameEngine.h	/^		K0, K1, K2, K3, K4, K5, K6, K7, K8, K9,$/;"	e	enum:olc::Key
+K6	include/olcPixelGameEngine.h	/^		K0, K1, K2, K3, K4, K5, K6, K7, K8, K9,$/;"	e	enum:olc::Key
+K7	include/olcPixelGameEngine.h	/^		K0, K1, K2, K3, K4, K5, K6, K7, K8, K9,$/;"	e	enum:olc::Key
+K8	include/olcPixelGameEngine.h	/^		K0, K1, K2, K3, K4, K5, K6, K7, K8, K9,$/;"	e	enum:olc::Key
+K9	include/olcPixelGameEngine.h	/^		K0, K1, K2, K3, K4, K5, K6, K7, K8, K9,$/;"	e	enum:olc::Key
+Key	include/olcPixelGameEngine.h	/^	enum Key$/;"	g	namespace:olc
+L	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+LEFT	include/olcPixelGameEngine.h	/^		UP, DOWN, LEFT, RIGHT,$/;"	e	enum:olc::Key
+LEFT	include/olcPixelGameEngine.h	/^		static constexpr int32_t LEFT = 0;$/;"	v	namespace:olc::Mouse	typeref:typename:int32_t
+LayerDesc	include/olcPixelGameEngine.h	/^	struct LayerDesc$/;"	s	namespace:olc
+Load	include/olcPixelGameEngine.h	/^	olc::rcode Renderable::Load(const std::string& sFile, ResourcePack* pack, bool filter, bool cla/;"	f	class:olc::Renderable	typeref:typename:olc::rcode
+LoadFromFile	include/olcPixelGameEngine.h	/^	olc::rcode Sprite::LoadFromFile(const std::string& sImageFile, olc::ResourcePack* pack)$/;"	f	class:olc::Sprite	typeref:typename:olc::rcode
+LoadImageResource	include/olcPixelGameEngine.h	/^		olc::rcode LoadImageResource(olc::Sprite* spr, const std::string& sImageFile, olc::ResourcePac/;"	f	class:olc::ImageLoader_GDIPlus	typeref:typename:olc::rcode
+LoadImageResource	include/olcPixelGameEngine.h	/^		olc::rcode LoadImageResource(olc::Sprite* spr, const std::string& sImageFile, olc::ResourcePac/;"	f	class:olc::ImageLoader_LibPNG	typeref:typename:olc::rcode
+LoadImageResource	include/olcPixelGameEngine.h	/^		olc::rcode LoadImageResource(olc::Sprite* spr, const std::string& sImageFile, olc::ResourcePac/;"	f	class:olc::ImageLoader_STB	typeref:typename:olc::rcode
+LoadPack	include/olcPixelGameEngine.h	/^	bool ResourcePack::LoadPack(const std::string& sFile, const std::string& sKey)$/;"	f	class:olc::ResourcePack	typeref:typename:bool
+Loaded	include/olcPixelGameEngine.h	/^	bool ResourcePack::Loaded()$/;"	f	class:olc::ResourcePack	typeref:typename:bool
+M	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+MAGENTA	include/olcPixelGameEngine.h	/^		MAGENTA(255, 0, 255), DARK_MAGENTA(128, 0, 128), VERY_DARK_MAGENTA(64, 0, 64),$/;"	v	namespace:olc	typeref:typename:const Pixel
+MASK	include/olcPixelGameEngine.h	/^		enum Mode { NORMAL, MASK, ALPHA, CUSTOM };$/;"	e	enum:olc::Pixel::Mode
+MIDDLE	include/olcPixelGameEngine.h	/^		static constexpr int32_t MIDDLE = 2;$/;"	v	namespace:olc::Mouse	typeref:typename:int32_t
+MINUS	include/olcPixelGameEngine.h	/^		EQUALS, COMMA, MINUS,$/;"	e	enum:olc::Key
+MULTIPLICATIVE	include/olcPixelGameEngine.h	/^		MULTIPLICATIVE,$/;"	e	enum:olc::DecalMode
+MainLoop	include/olcPixelGameEngine.h	/^		static void MainLoop()$/;"	f	class:olc::Platform_Emscripten	typeref:typename:void
+Mode	include/olcPixelGameEngine.h	/^		enum Mode { NORMAL, MASK, ALPHA, CUSTOM };$/;"	g	struct:olc::Pixel
+Mode	include/olcPixelGameEngine.h	/^		enum Mode { NORMAL, PERIODIC };$/;"	g	class:olc::Sprite
+Mouse	include/olcPixelGameEngine.h	/^	namespace Mouse$/;"	n	namespace:olc
+N	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+NOMINMAX	include/olcPixelGameEngine.h	/^		#define NOMINMAX$/;"	d
+NONE	include/olcPixelGameEngine.h	/^		NONE,$/;"	e	enum:olc::Key
+NONE	include/olcPixelGameEngine.h	/^		enum Flip { NONE = 0, HORIZ = 1, VERT = 2 };$/;"	e	enum:olc::Sprite::Flip
+NORMAL	include/olcPixelGameEngine.h	/^		NORMAL,$/;"	e	enum:olc::DecalMode
+NORMAL	include/olcPixelGameEngine.h	/^		enum Mode { NORMAL, MASK, ALPHA, CUSTOM };$/;"	e	enum:olc::Pixel::Mode
+NORMAL	include/olcPixelGameEngine.h	/^		enum Mode { NORMAL, PERIODIC };$/;"	e	enum:olc::Sprite::Mode
+NO_FILE	include/olcPixelGameEngine.h	/^	enum rcode { FAIL = 0, OK = 1, NO_FILE = -1 };$/;"	e	enum:olc::rcode
+NP0	include/olcPixelGameEngine.h	/^		NP0, NP1, NP2, NP3, NP4, NP5, NP6, NP7, NP8, NP9,$/;"	e	enum:olc::Key
+NP1	include/olcPixelGameEngine.h	/^		NP0, NP1, NP2, NP3, NP4, NP5, NP6, NP7, NP8, NP9,$/;"	e	enum:olc::Key
+NP2	include/olcPixelGameEngine.h	/^		NP0, NP1, NP2, NP3, NP4, NP5, NP6, NP7, NP8, NP9,$/;"	e	enum:olc::Key
+NP3	include/olcPixelGameEngine.h	/^		NP0, NP1, NP2, NP3, NP4, NP5, NP6, NP7, NP8, NP9,$/;"	e	enum:olc::Key
+NP4	include/olcPixelGameEngine.h	/^		NP0, NP1, NP2, NP3, NP4, NP5, NP6, NP7, NP8, NP9,$/;"	e	enum:olc::Key
+NP5	include/olcPixelGameEngine.h	/^		NP0, NP1, NP2, NP3, NP4, NP5, NP6, NP7, NP8, NP9,$/;"	e	enum:olc::Key
+NP6	include/olcPixelGameEngine.h	/^		NP0, NP1, NP2, NP3, NP4, NP5, NP6, NP7, NP8, NP9,$/;"	e	enum:olc::Key
+NP7	include/olcPixelGameEngine.h	/^		NP0, NP1, NP2, NP3, NP4, NP5, NP6, NP7, NP8, NP9,$/;"	e	enum:olc::Key
+NP8	include/olcPixelGameEngine.h	/^		NP0, NP1, NP2, NP3, NP4, NP5, NP6, NP7, NP8, NP9,$/;"	e	enum:olc::Key
+NP9	include/olcPixelGameEngine.h	/^		NP0, NP1, NP2, NP3, NP4, NP5, NP6, NP7, NP8, NP9,$/;"	e	enum:olc::Key
+NP_ADD	include/olcPixelGameEngine.h	/^		NP_MUL, NP_DIV, NP_ADD, NP_SUB, NP_DECIMAL, PERIOD,$/;"	e	enum:olc::Key
+NP_DECIMAL	include/olcPixelGameEngine.h	/^		NP_MUL, NP_DIV, NP_ADD, NP_SUB, NP_DECIMAL, PERIOD,$/;"	e	enum:olc::Key
+NP_DIV	include/olcPixelGameEngine.h	/^		NP_MUL, NP_DIV, NP_ADD, NP_SUB, NP_DECIMAL, PERIOD,$/;"	e	enum:olc::Key
+NP_MUL	include/olcPixelGameEngine.h	/^		NP_MUL, NP_DIV, NP_ADD, NP_SUB, NP_DECIMAL, PERIOD,$/;"	e	enum:olc::Key
+NP_SUB	include/olcPixelGameEngine.h	/^		NP_MUL, NP_DIV, NP_ADD, NP_SUB, NP_DECIMAL, PERIOD,$/;"	e	enum:olc::Key
+O	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+OEM_1	include/olcPixelGameEngine.h	/^		OEM_1, OEM_2, OEM_3, OEM_4, OEM_5, OEM_6, OEM_7, OEM_8,$/;"	e	enum:olc::Key
+OEM_2	include/olcPixelGameEngine.h	/^		OEM_1, OEM_2, OEM_3, OEM_4, OEM_5, OEM_6, OEM_7, OEM_8,$/;"	e	enum:olc::Key
+OEM_3	include/olcPixelGameEngine.h	/^		OEM_1, OEM_2, OEM_3, OEM_4, OEM_5, OEM_6, OEM_7, OEM_8,$/;"	e	enum:olc::Key
+OEM_4	include/olcPixelGameEngine.h	/^		OEM_1, OEM_2, OEM_3, OEM_4, OEM_5, OEM_6, OEM_7, OEM_8,$/;"	e	enum:olc::Key
+OEM_5	include/olcPixelGameEngine.h	/^		OEM_1, OEM_2, OEM_3, OEM_4, OEM_5, OEM_6, OEM_7, OEM_8,$/;"	e	enum:olc::Key
+OEM_6	include/olcPixelGameEngine.h	/^		OEM_1, OEM_2, OEM_3, OEM_4, OEM_5, OEM_6, OEM_7, OEM_8,$/;"	e	enum:olc::Key
+OEM_7	include/olcPixelGameEngine.h	/^		OEM_1, OEM_2, OEM_3, OEM_4, OEM_5, OEM_6, OEM_7, OEM_8,$/;"	e	enum:olc::Key
+OEM_8	include/olcPixelGameEngine.h	/^		OEM_1, OEM_2, OEM_3, OEM_4, OEM_5, OEM_6, OEM_7, OEM_8,$/;"	e	enum:olc::Key
+OGL_LOAD	include/olcPixelGameEngine.h	/^	#define OGL_LOAD(/;"	d
+OK	include/olcPixelGameEngine.h	/^	enum rcode { FAIL = 0, OK = 1, NO_FILE = -1 };$/;"	e	enum:olc::rcode
+OLC_GFX_OPENGL10	include/olcPixelGameEngine.h	/^			#define OLC_GFX_OPENGL10$/;"	d
+OLC_GFX_OPENGL33	include/olcPixelGameEngine.h	/^			#define OLC_GFX_OPENGL33$/;"	d
+OLC_IMAGE_GDI	include/olcPixelGameEngine.h	/^			#define	OLC_IMAGE_GDI$/;"	d
+OLC_IMAGE_LIBPNG	include/olcPixelGameEngine.h	/^			#define	OLC_IMAGE_LIBPNG$/;"	d
+OLC_MAX_VERTS	include/olcPixelGameEngine.h	/^	constexpr size_t OLC_MAX_VERTS = 128;$/;"	v	namespace:olc	typeref:typename:size_t
+OLC_PGE_APPLICATION	src/Isometric_Finder.cpp	/^#define OLC_PGE_APPLICATION$/;"	d	file:
+OLC_PGE_DEF	include/olcPixelGameEngine.h	/^#define OLC_PGE_DEF$/;"	d
+OLC_PLATFORM_EMSCRIPTEN	include/olcPixelGameEngine.h	/^			#define OLC_PLATFORM_EMSCRIPTEN$/;"	d
+OLC_PLATFORM_GLUT	include/olcPixelGameEngine.h	/^			#define OLC_PLATFORM_GLUT$/;"	d
+OLC_PLATFORM_WINAPI	include/olcPixelGameEngine.h	/^			#define OLC_PLATFORM_WINAPI$/;"	d
+OLC_PLATFORM_X11	include/olcPixelGameEngine.h	/^			#define OLC_PLATFORM_X11$/;"	d
+OnAfterUserCreate	include/olcPixelGameEngine.h	/^	void PGEX::OnAfterUserCreate()	{}$/;"	f	class:olc::PGEX	typeref:typename:void
+OnAfterUserUpdate	include/olcPixelGameEngine.h	/^	void PGEX::OnAfterUserUpdate(float fElapsedTime) {}$/;"	f	class:olc::PGEX	typeref:typename:void
+OnBeforeUserCreate	include/olcPixelGameEngine.h	/^	void PGEX::OnBeforeUserCreate() {}$/;"	f	class:olc::PGEX	typeref:typename:void
+OnBeforeUserUpdate	include/olcPixelGameEngine.h	/^	void PGEX::OnBeforeUserUpdate(float& fElapsedTime) {}$/;"	f	class:olc::PGEX	typeref:typename:void
+OnUserCreate	include/olcPixelGameEngine.h	/^	bool PixelGameEngine::OnUserCreate()$/;"	f	class:olc::PixelGameEngine	typeref:typename:bool
+OnUserCreate	src/Isometric_Finder.cpp	/^	bool OnUserCreate() override$/;"	f	class:IsometricDemo	typeref:typename:bool	file:
+OnUserDestroy	include/olcPixelGameEngine.h	/^	bool PixelGameEngine::OnUserDestroy()$/;"	f	class:olc::PixelGameEngine	typeref:typename:bool
+OnUserUpdate	include/olcPixelGameEngine.h	/^	bool PixelGameEngine::OnUserUpdate(float fElapsedTime)$/;"	f	class:olc::PixelGameEngine	typeref:typename:bool
+OnUserUpdate	src/Isometric_Finder.cpp	/^	bool OnUserUpdate(float fElapsedTime) override$/;"	f	class:IsometricDemo	typeref:typename:bool	file:
+P	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+PAUSE	include/olcPixelGameEngine.h	/^		BACK, ESCAPE, RETURN, ENTER, PAUSE, SCROLL,$/;"	e	enum:olc::Key
+PERIOD	include/olcPixelGameEngine.h	/^		NP_MUL, NP_DIV, NP_ADD, NP_SUB, NP_DECIMAL, PERIOD,$/;"	e	enum:olc::Key
+PERIODIC	include/olcPixelGameEngine.h	/^		enum Mode { NORMAL, PERIODIC };$/;"	e	enum:olc::Sprite::Mode
+PGDN	include/olcPixelGameEngine.h	/^		SPACE, TAB, SHIFT, CTRL, INS, DEL, HOME, END, PGUP, PGDN,$/;"	e	enum:olc::Key
+PGEX	include/olcPixelGameEngine.h	/^	PGEX::PGEX(bool bHook) { if(bHook) pge->pgex_Register(this); }$/;"	f	class:olc::PGEX
+PGEX	include/olcPixelGameEngine.h	/^	class PGEX$/;"	c	namespace:olc
+PGE_USE_CUSTOM_START	include/olcPixelGameEngine.h	/^	#define PGE_USE_CUSTOM_START$/;"	d
+PGE_VER	include/olcPixelGameEngine.h	/^#define PGE_VER /;"	d
+PGUP	include/olcPixelGameEngine.h	/^		SPACE, TAB, SHIFT, CTRL, INS, DEL, HOME, END, PGUP, PGDN,$/;"	e	enum:olc::Key
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
+Pixel	include/olcPixelGameEngine.h	/^	Pixel::Pixel()$/;"	f	class:olc::Pixel
+Pixel	include/olcPixelGameEngine.h	/^	Pixel::Pixel(uint32_t p)$/;"	f	class:olc::Pixel
+Pixel	include/olcPixelGameEngine.h	/^	Pixel::Pixel(uint8_t red, uint8_t green, uint8_t blue, uint8_t alpha)$/;"	f	class:olc::Pixel
+Pixel	include/olcPixelGameEngine.h	/^	struct Pixel$/;"	s	namespace:olc
+PixelF	include/olcPixelGameEngine.h	/^	Pixel PixelF(float red, float green, float blue, float alpha)$/;"	f	namespace:olc	typeref:typename:Pixel
+PixelGameEngine	include/olcPixelGameEngine.h	/^	PixelGameEngine::PixelGameEngine()$/;"	f	class:olc::PixelGameEngine
+PixelGameEngine	include/olcPixelGameEngine.h	/^	class PixelGameEngine$/;"	c	namespace:olc
+PixelLerp	include/olcPixelGameEngine.h	/^	Pixel PixelLerp(const olc::Pixel& p1, const olc::Pixel& p2, float t)$/;"	f	namespace:olc	typeref:typename:Pixel
+Platform	include/olcPixelGameEngine.h	/^	class Platform$/;"	c	namespace:olc
+Platform_Emscripten	include/olcPixelGameEngine.h	/^	class Platform_Emscripten : public olc::Platform$/;"	c	namespace:olc
+Platform_GLUT	include/olcPixelGameEngine.h	/^	class Platform_GLUT : public olc::Platform$/;"	c	namespace:olc
+Platform_Linux	include/olcPixelGameEngine.h	/^	class Platform_Linux : public olc::Platform$/;"	c	namespace:olc
+Platform_Windows	include/olcPixelGameEngine.h	/^	class Platform_Windows : public olc::Platform$/;"	c	namespace:olc
+PrepareDevice	include/olcPixelGameEngine.h	/^		void PrepareDevice() override$/;"	f	class:olc::Renderer_OGL10	typeref:typename:void
+PrepareDevice	include/olcPixelGameEngine.h	/^		void PrepareDevice() override$/;"	f	class:olc::Renderer_OGL33	typeref:typename:void
+PrepareDrawing	include/olcPixelGameEngine.h	/^		void PrepareDrawing() override$/;"	f	class:olc::Renderer_OGL10	typeref:typename:void
+PrepareDrawing	include/olcPixelGameEngine.h	/^		void PrepareDrawing() override$/;"	f	class:olc::Renderer_OGL33	typeref:typename:void
+Q	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+R	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+RED	include/olcPixelGameEngine.h	/^		RED(255, 0, 0), DARK_RED(128, 0, 0), VERY_DARK_RED(64, 0, 0),$/;"	v	namespace:olc	typeref:typename:const Pixel
+RETURN	include/olcPixelGameEngine.h	/^		BACK, ESCAPE, RETURN, ENTER, PAUSE, SCROLL,$/;"	e	enum:olc::Key
+RIGHT	include/olcPixelGameEngine.h	/^		UP, DOWN, LEFT, RIGHT,$/;"	e	enum:olc::Key
+RIGHT	include/olcPixelGameEngine.h	/^		static constexpr int32_t RIGHT = 1;$/;"	v	namespace:olc::Mouse	typeref:typename:int32_t
+RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E rm -f$/;"	m
+ReadTexture	include/olcPixelGameEngine.h	/^		void ReadTexture(uint32_t id, olc::Sprite* spr) override$/;"	f	class:olc::Renderer_OGL10	typeref:typename:void
+ReadTexture	include/olcPixelGameEngine.h	/^		void ReadTexture(uint32_t id, olc::Sprite* spr) override$/;"	f	class:olc::Renderer_OGL33	typeref:typename:void
+Renderable	include/olcPixelGameEngine.h	/^		Renderable(Renderable&& r) : pSprite(std::move(r.pSprite)), pDecal(std::move(r.pDecal)) {}		$/;"	f	class:olc::Renderable
+Renderable	include/olcPixelGameEngine.h	/^	class Renderable$/;"	c	namespace:olc
+Renderer	include/olcPixelGameEngine.h	/^	class Renderer$/;"	c	namespace:olc
+Renderer_OGL10	include/olcPixelGameEngine.h	/^	class Renderer_OGL10 : public olc::Renderer$/;"	c	namespace:olc
+Renderer_OGL33	include/olcPixelGameEngine.h	/^	class Renderer_OGL33 : public olc::Renderer$/;"	c	namespace:olc
+ResourceBuffer	include/olcPixelGameEngine.h	/^	ResourceBuffer::ResourceBuffer(std::ifstream& ifs, uint32_t offset, uint32_t size)$/;"	f	class:olc::ResourceBuffer
+ResourceBuffer	include/olcPixelGameEngine.h	/^	struct ResourceBuffer : public std::streambuf$/;"	s	namespace:olc
+ResourcePack	include/olcPixelGameEngine.h	/^	ResourcePack::ResourcePack() { }$/;"	f	class:olc::ResourcePack
+ResourcePack	include/olcPixelGameEngine.h	/^	class ResourcePack : public std::streambuf$/;"	c	namespace:olc
+S	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+SCROLL	include/olcPixelGameEngine.h	/^		BACK, ESCAPE, RETURN, ENTER, PAUSE, SCROLL,$/;"	e	enum:olc::Key
+SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHIFT	include/olcPixelGameEngine.h	/^		SPACE, TAB, SHIFT, CTRL, INS, DEL, HOME, END, PGUP, PGDN,$/;"	e	enum:olc::Key
+SIMULATE_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_ID /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_PATCH /;"	d	file:
+SOURCES	CMakeLists.txt	/^set(SOURCES src\/Isometric_Finder.cpp)$/;"	v
+SPACE	include/olcPixelGameEngine.h	/^		SPACE, TAB, SHIFT, CTRL, INS, DEL, HOME, END, PGUP, PGDN,$/;"	e	enum:olc::Key
+STB_IMAGE_IMPLEMENTATION	include/olcPixelGameEngine.h	/^#define STB_IMAGE_IMPLEMENTATION$/;"	d
+STENCIL	include/olcPixelGameEngine.h	/^		STENCIL,$/;"	e	enum:olc::DecalMode
+STRINGIFY	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
+Sample	include/olcPixelGameEngine.h	/^	Pixel Sprite::Sample(float x, float y) const$/;"	f	class:olc::Sprite	typeref:typename:Pixel
+SampleBL	include/olcPixelGameEngine.h	/^	Pixel Sprite::SampleBL(float u, float v) const$/;"	f	class:olc::Sprite	typeref:typename:Pixel
+SaveImageResource	include/olcPixelGameEngine.h	/^		olc::rcode SaveImageResource(olc::Sprite* spr, const std::string& sImageFile) override$/;"	f	class:olc::ImageLoader_GDIPlus	typeref:typename:olc::rcode
+SaveImageResource	include/olcPixelGameEngine.h	/^		olc::rcode SaveImageResource(olc::Sprite* spr, const std::string& sImageFile) override$/;"	f	class:olc::ImageLoader_LibPNG	typeref:typename:olc::rcode
+SaveImageResource	include/olcPixelGameEngine.h	/^		olc::rcode SaveImageResource(olc::Sprite* spr, const std::string& sImageFile) override$/;"	f	class:olc::ImageLoader_STB	typeref:typename:olc::rcode
+SavePack	include/olcPixelGameEngine.h	/^	bool ResourcePack::SavePack(const std::string& sFile, const std::string& sKey)$/;"	f	class:olc::ResourcePack	typeref:typename:bool
+ScreenHeight	include/olcPixelGameEngine.h	/^	int32_t PixelGameEngine::ScreenHeight() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:int32_t
+ScreenWidth	include/olcPixelGameEngine.h	/^	int32_t PixelGameEngine::ScreenWidth() const$/;"	f	class:olc::PixelGameEngine	typeref:typename:int32_t
+SetDecalMode	include/olcPixelGameEngine.h	/^		void SetDecalMode(const olc::DecalMode& mode) override$/;"	f	class:olc::Renderer_OGL33	typeref:typename:void
+SetDecalMode	include/olcPixelGameEngine.h	/^		void SetDecalMode(const olc::DecalMode& mode)$/;"	f	class:olc::Renderer_OGL10	typeref:typename:void
+SetDecalMode	include/olcPixelGameEngine.h	/^	void PixelGameEngine::SetDecalMode(const olc::DecalMode& mode)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+SetDrawTarget	include/olcPixelGameEngine.h	/^	void PixelGameEngine::SetDrawTarget(Sprite* target)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+SetDrawTarget	include/olcPixelGameEngine.h	/^	void PixelGameEngine::SetDrawTarget(uint8_t layer)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+SetLayerCustomRenderFunction	include/olcPixelGameEngine.h	/^	void PixelGameEngine::SetLayerCustomRenderFunction(uint8_t layer, std::function<void()> f)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+SetLayerOffset	include/olcPixelGameEngine.h	/^	void PixelGameEngine::SetLayerOffset(uint8_t layer, const olc::vf2d& offset)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+SetLayerOffset	include/olcPixelGameEngine.h	/^	void PixelGameEngine::SetLayerOffset(uint8_t layer, float x, float y)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+SetLayerScale	include/olcPixelGameEngine.h	/^	void PixelGameEngine::SetLayerScale(uint8_t layer, const olc::vf2d& scale)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+SetLayerScale	include/olcPixelGameEngine.h	/^	void PixelGameEngine::SetLayerScale(uint8_t layer, float x, float y)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+SetLayerTint	include/olcPixelGameEngine.h	/^	void PixelGameEngine::SetLayerTint(uint8_t layer, const olc::Pixel& tint)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+SetPixel	include/olcPixelGameEngine.h	/^	bool Sprite::SetPixel(const olc::vi2d& a, Pixel p)$/;"	f	class:olc::Sprite	typeref:typename:bool
+SetPixel	include/olcPixelGameEngine.h	/^	bool Sprite::SetPixel(int32_t x, int32_t y, Pixel p)$/;"	f	class:olc::Sprite	typeref:typename:bool
+SetPixelBlend	include/olcPixelGameEngine.h	/^	void PixelGameEngine::SetPixelBlend(float fBlend)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+SetPixelMode	include/olcPixelGameEngine.h	/^	void PixelGameEngine::SetPixelMode(Pixel::Mode m)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+SetPixelMode	include/olcPixelGameEngine.h	/^	void PixelGameEngine::SetPixelMode(std::function<olc::Pixel(const int x, const int y, const olc/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+SetSampleMode	include/olcPixelGameEngine.h	/^	void Sprite::SetSampleMode(olc::Sprite::Mode mode)$/;"	f	class:olc::Sprite	typeref:typename:void
+SetScreenSize	include/olcPixelGameEngine.h	/^	void PixelGameEngine::SetScreenSize(int w, int h)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+SetWindowTitle	include/olcPixelGameEngine.h	/^		virtual olc::rcode SetWindowTitle(const std::string& s) override$/;"	f	class:olc::Platform_Emscripten	typeref:typename:olc::rcode
+SetWindowTitle	include/olcPixelGameEngine.h	/^		virtual olc::rcode SetWindowTitle(const std::string& s) override$/;"	f	class:olc::Platform_GLUT	typeref:typename:olc::rcode
+SetWindowTitle	include/olcPixelGameEngine.h	/^		virtual olc::rcode SetWindowTitle(const std::string& s) override$/;"	f	class:olc::Platform_Linux	typeref:typename:olc::rcode
+SetWindowTitle	include/olcPixelGameEngine.h	/^		virtual olc::rcode SetWindowTitle(const std::string& s) override$/;"	f	class:olc::Platform_Windows	typeref:typename:olc::rcode
+Sprite	include/olcPixelGameEngine.h	/^	Sprite::Sprite()$/;"	f	class:olc::Sprite
+Sprite	include/olcPixelGameEngine.h	/^	Sprite::Sprite(const std::string& sImageFile, olc::ResourcePack* pack)$/;"	f	class:olc::Sprite
+Sprite	include/olcPixelGameEngine.h	/^	Sprite::Sprite(int32_t w, int32_t h)$/;"	f	class:olc::Sprite
+Sprite	include/olcPixelGameEngine.h	/^	class Sprite$/;"	c	namespace:olc
+Sprite	include/olcPixelGameEngine.h	/^	olc::Sprite* Renderable::Sprite() const$/;"	f	class:olc::Renderable	typeref:typename:olc::Sprite *
+Start	include/olcPixelGameEngine.h	/^	olc::rcode PixelGameEngine::Start()$/;"	f	class:olc::PixelGameEngine	typeref:typename:olc::rcode
+StartSystemEventLoop	include/olcPixelGameEngine.h	/^		virtual olc::rcode StartSystemEventLoop() override $/;"	f	class:olc::Platform_Emscripten	typeref:typename:olc::rcode
+StartSystemEventLoop	include/olcPixelGameEngine.h	/^		virtual olc::rcode StartSystemEventLoop() override {$/;"	f	class:olc::Platform_GLUT	typeref:typename:olc::rcode
+StartSystemEventLoop	include/olcPixelGameEngine.h	/^		virtual olc::rcode StartSystemEventLoop() override$/;"	f	class:olc::Platform_Linux	typeref:typename:olc::rcode
+StartSystemEventLoop	include/olcPixelGameEngine.h	/^		virtual olc::rcode StartSystemEventLoop() override$/;"	f	class:olc::Platform_Windows	typeref:typename:olc::rcode
+T	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+TAB	include/olcPixelGameEngine.h	/^		SPACE, TAB, SHIFT, CTRL, INS, DEL, HOME, END, PGUP, PGDN,$/;"	e	enum:olc::Key
+THREADS_PREFER_PTHREAD_FLAG	CMakeLists.txt	/^set(THREADS_PREFER_PTHREAD_FLAG ON)$/;"	v
+ThreadCleanUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ThreadCleanUp() override$/;"	f	class:olc::Platform_Emscripten	typeref:typename:olc::rcode
+ThreadCleanUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ThreadCleanUp() override$/;"	f	class:olc::Platform_GLUT	typeref:typename:olc::rcode
+ThreadCleanUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ThreadCleanUp() override$/;"	f	class:olc::Platform_Linux	typeref:typename:olc::rcode
+ThreadCleanUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ThreadCleanUp() override$/;"	f	class:olc::Platform_Windows	typeref:typename:olc::rcode
+ThreadFunct	include/olcPixelGameEngine.h	/^		static void ThreadFunct() {$/;"	f	class:olc::Platform_GLUT	typeref:typename:void
+ThreadStartUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ThreadStartUp() override { return olc::rcode::OK; }$/;"	f	class:olc::Platform_Windows	typeref:typename:olc::rcode
+ThreadStartUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ThreadStartUp() override$/;"	f	class:olc::Platform_Emscripten	typeref:typename:olc::rcode
+ThreadStartUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ThreadStartUp() override$/;"	f	class:olc::Platform_GLUT	typeref:typename:olc::rcode
+ThreadStartUp	include/olcPixelGameEngine.h	/^		virtual olc::rcode ThreadStartUp() override$/;"	f	class:olc::Platform_Linux	typeref:typename:olc::rcode
+U	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+UNUSED	include/olcPixelGameEngine.h	/^#define UNUSED(/;"	d
+UP	include/olcPixelGameEngine.h	/^		UP, DOWN, LEFT, RIGHT,$/;"	e	enum:olc::Key
+USE_EXPERIMENTAL_FS	include/olcPixelGameEngine.h	/^#define USE_EXPERIMENTAL_FS$/;"	d
+Update	include/olcPixelGameEngine.h	/^	void Decal::Update()$/;"	f	class:olc::Decal	typeref:typename:void
+UpdateSprite	include/olcPixelGameEngine.h	/^	void Decal::UpdateSprite()$/;"	f	class:olc::Decal	typeref:typename:void
+UpdateTexture	include/olcPixelGameEngine.h	/^		void UpdateTexture(uint32_t id, olc::Sprite* spr) override$/;"	f	class:olc::Renderer_OGL10	typeref:typename:void
+UpdateTexture	include/olcPixelGameEngine.h	/^		void UpdateTexture(uint32_t id, olc::Sprite* spr) override$/;"	f	class:olc::Renderer_OGL33	typeref:typename:void
+UpdateViewport	include/olcPixelGameEngine.h	/^		void UpdateViewport(const olc::vi2d& pos, const olc::vi2d& size) override$/;"	f	class:olc::Renderer_OGL10	typeref:typename:void
+UpdateViewport	include/olcPixelGameEngine.h	/^		void UpdateViewport(const olc::vi2d& pos, const olc::vi2d& size) override$/;"	f	class:olc::Renderer_OGL33	typeref:typename:void
+UpdateWindowSize	include/olcPixelGameEngine.h	/^		void UpdateWindowSize(int width, int height)$/;"	f	class:olc::Platform_Emscripten	typeref:typename:void
+V	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+VC_EXTRALEAN	include/olcPixelGameEngine.h	/^		#define VC_EXTRALEAN$/;"	d
+VERT	include/olcPixelGameEngine.h	/^		enum Flip { NONE = 0, HORIZ = 1, VERT = 2 };$/;"	e	enum:olc::Sprite::Flip
+VERY_DARK_BLUE	include/olcPixelGameEngine.h	/^		BLUE(0, 0, 255), DARK_BLUE(0, 0, 128), VERY_DARK_BLUE(0, 0, 64),$/;"	v	namespace:olc	typeref:typename:const Pixel
+VERY_DARK_CYAN	include/olcPixelGameEngine.h	/^		CYAN(0, 255, 255), DARK_CYAN(0, 128, 128), VERY_DARK_CYAN(0, 64, 64),$/;"	v	namespace:olc	typeref:typename:const Pixel
+VERY_DARK_GREEN	include/olcPixelGameEngine.h	/^		GREEN(0, 255, 0), DARK_GREEN(0, 128, 0), VERY_DARK_GREEN(0, 64, 0),$/;"	v	namespace:olc	typeref:typename:const Pixel
+VERY_DARK_GREY	include/olcPixelGameEngine.h	/^		GREY(192, 192, 192), DARK_GREY(128, 128, 128), VERY_DARK_GREY(64, 64, 64),$/;"	v	namespace:olc	typeref:typename:const Pixel
+VERY_DARK_MAGENTA	include/olcPixelGameEngine.h	/^		MAGENTA(255, 0, 255), DARK_MAGENTA(128, 0, 128), VERY_DARK_MAGENTA(64, 0, 64),$/;"	v	namespace:olc	typeref:typename:const Pixel
+VERY_DARK_RED	include/olcPixelGameEngine.h	/^		RED(255, 0, 0), DARK_RED(128, 0, 0), VERY_DARK_RED(64, 0, 0),$/;"	v	namespace:olc	typeref:typename:const Pixel
+VERY_DARK_YELLOW	include/olcPixelGameEngine.h	/^		YELLOW(255, 255, 0), DARK_YELLOW(128, 128, 0), VERY_DARK_YELLOW(64, 64, 0),$/;"	v	namespace:olc	typeref:typename:const Pixel
+W	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+WHITE	include/olcPixelGameEngine.h	/^		WHITE(255, 255, 255), BLACK(0, 0, 0), BLANK(0, 0, 0, 0);$/;"	v	namespace:olc	typeref:typename:const Pixel
+WIREFRAME	include/olcPixelGameEngine.h	/^		WIREFRAME,$/;"	e	enum:olc::DecalMode
+X	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+X11	include/olcPixelGameEngine.h	/^	namespace X11$/;"	n
+Y	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+YELLOW	include/olcPixelGameEngine.h	/^		YELLOW(255, 255, 0), DARK_YELLOW(128, 128, 0), VERY_DARK_YELLOW(64, 64, 0),$/;"	v	namespace:olc	typeref:typename:const Pixel
+Z	include/olcPixelGameEngine.h	/^		A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,$/;"	e	enum:olc::Key
+_SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING	include/olcPixelGameEngine.h	/^	#define _SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING$/;"	d
+_WIN32_WINNT	include/olcPixelGameEngine.h	/^			#define _WIN32_WINNT /;"	d
+_WINSOCKAPI_	include/olcPixelGameEngine.h	/^	#define _WINSOCKAPI_ /;"	d
+__anon2476a4fe010a	include/olcPixelGameEngine.h	/^		{$/;"	u	struct:olc::Pixel
+__anon2476a4fe0208	include/olcPixelGameEngine.h	/^			struct { uint8_t r; uint8_t g; uint8_t b; uint8_t a; };$/;"	s	union:olc::Pixel::__anon2476a4fe010a
+__anon2476a4fe0302	include/olcPixelGameEngine.h	/^		auto read = [&decoded, &pos](char* dst, size_t size) {$/;"	f	function:olc::ResourcePack::LoadPack	file:
+__anon2476a4fe0402	include/olcPixelGameEngine.h	/^		auto get = [&read]() -> int { char c; read(&c, 1); return c; };$/;"	f	function:olc::ResourcePack::LoadPack	typeref:typename:int	file:
+__anon2476a4fe0502	include/olcPixelGameEngine.h	/^		auto write = [&stream](const char* data, size_t size) {$/;"	f	function:olc::ResourcePack::SavePack	file:
+__anon2476a4fe0602	include/olcPixelGameEngine.h	/^		auto rol = [&](void) { pattern = (pattern << 1) | (pattern >> 31); return pattern & 1; };$/;"	f	function:olc::PixelGameEngine::DrawLine	file:
+__anon2476a4fe0702	include/olcPixelGameEngine.h	/^			{$/;"	f	function:olc::PixelGameEngine::FillCircle	file:
+__anon2476a4fe0802	include/olcPixelGameEngine.h	/^		auto drawline = [&](int sx, int ex, int ny) { for (int i = sx; i <= ex; i++) Draw(i, ny, p); }/;"	f	function:olc::PixelGameEngine::FillTriangle	file:
+__anon2476a4fe0902	include/olcPixelGameEngine.h	/^		{$/;"	f	function:olc::PixelGameEngine::olc_CoreUpdate	file:
+__anon2476a4fe0a02	include/olcPixelGameEngine.h	/^			{$/;"	f	function:olc::ImageLoader_LibPNG::LoadImageResource	file:
+__anon2476a4fe0b02	include/olcPixelGameEngine.h	/^			glutKeyboardFunc([](unsigned char key, int x, int y) -> void {$/;"	f	function:olc::Platform_GLUT::CreateWindowPane	typeref:typename:void	file:
+__anon2476a4fe0c02	include/olcPixelGameEngine.h	/^			glutKeyboardUpFunc([](unsigned char key, int x, int y) -> void {$/;"	f	function:olc::Platform_GLUT::CreateWindowPane	typeref:typename:void	file:
+__anon2476a4fe0d02	include/olcPixelGameEngine.h	/^			glutSpecialFunc([](int key, int x, int y) -> void {$/;"	f	function:olc::Platform_GLUT::CreateWindowPane	typeref:typename:void	file:
+__anon2476a4fe0e02	include/olcPixelGameEngine.h	/^			glutSpecialUpFunc([](int key, int x, int y) -> void {$/;"	f	function:olc::Platform_GLUT::CreateWindowPane	typeref:typename:void	file:
+__anon2476a4fe0f02	include/olcPixelGameEngine.h	/^			glutMouseFunc([](int button, int state, int x, int y) -> void {$/;"	f	function:olc::Platform_GLUT::CreateWindowPane	typeref:typename:void	file:
+__anon2476a4fe1002	include/olcPixelGameEngine.h	/^			auto mouseMoveCall = [](int x, int y) -> void {$/;"	f	function:olc::Platform_GLUT::CreateWindowPane	typeref:typename:void	file:
+__anon2476a4fe1102	include/olcPixelGameEngine.h	/^			glutEntryFunc([](int state) -> void {$/;"	f	function:olc::Platform_GLUT::CreateWindowPane	typeref:typename:void	file:
+__anonb0db8df30102	src/Isometric_Finder.cpp	/^		pWorld = new int[vWorldSize.x * vWorldSize.y]{ 0 };$/;"	f	function:IsometricDemo::OnUserCreate	file:
+__anonb0db8df30202	src/Isometric_Finder.cpp	/^		{			$/;"	f	function:IsometricDemo::OnUserUpdate	file:
+__has_include	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^#  define __has_include(/;"	d	file:
+__has_include	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define __has_include(/;"	d	file:
+a	include/olcPixelGameEngine.h	/^			struct { uint8_t r; uint8_t g; uint8_t b; uint8_t a; };$/;"	m	struct:olc::Pixel::__anon2476a4fe010a::__anon2476a4fe0208	typeref:typename:uint8_t
+all	build/Makefile	/^all: cmake_check_build_system$/;"	t
+b	include/olcPixelGameEngine.h	/^			struct { uint8_t r; uint8_t g; uint8_t b; uint8_t a; };$/;"	m	struct:olc::Pixel::__anon2476a4fe010a::__anon2476a4fe0208	typeref:typename:uint8_t
+bActiveRef	include/olcPixelGameEngine.h	/^		static std::atomic<bool>* bActiveRef;$/;"	m	class:olc::Platform_GLUT	typeref:typename:std::atomic<bool> *
+bAtomActive	include/olcPixelGameEngine.h	/^		static std::atomic<bool> bAtomActive;$/;"	m	class:olc::PixelGameEngine	typeref:typename:std::atomic<bool>
+bEnableVSYNC	include/olcPixelGameEngine.h	/^		bool		bEnableVSYNC = false;$/;"	m	class:olc::PixelGameEngine	typeref:typename:bool
+bFullScreen	include/olcPixelGameEngine.h	/^		bool		bFullScreen = false;$/;"	m	class:olc::PixelGameEngine	typeref:typename:bool
+bHasInputFocus	include/olcPixelGameEngine.h	/^		bool		bHasInputFocus = false;$/;"	m	class:olc::PixelGameEngine	typeref:typename:bool
+bHasMouseFocus	include/olcPixelGameEngine.h	/^		bool		bHasMouseFocus = false;$/;"	m	class:olc::PixelGameEngine	typeref:typename:bool
+bHeld	include/olcPixelGameEngine.h	/^		bool bHeld = false;		\/\/ Set true for all frames between pressed and released events$/;"	m	struct:olc::HWButton	typeref:typename:bool
+bPixelCohesion	include/olcPixelGameEngine.h	/^		bool        bPixelCohesion = false;$/;"	m	class:olc::PixelGameEngine	typeref:typename:bool
+bPressed	include/olcPixelGameEngine.h	/^		bool bPressed = false;	\/\/ Set once during the frame the event occurs$/;"	m	struct:olc::HWButton	typeref:typename:bool
+bReleased	include/olcPixelGameEngine.h	/^		bool bReleased = false;	\/\/ Set once during the frame the event occurs$/;"	m	struct:olc::HWButton	typeref:typename:bool
+bShow	include/olcPixelGameEngine.h	/^		bool bShow = false;$/;"	m	struct:olc::LayerDesc	typeref:typename:bool
+bSync	include/olcPixelGameEngine.h	/^		bool bSync = false;$/;"	m	class:olc::Renderer_OGL10	typeref:typename:bool
+bSync	include/olcPixelGameEngine.h	/^		bool bSync = false;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:bool
+bUpdate	include/olcPixelGameEngine.h	/^		bool bUpdate = false;$/;"	m	struct:olc::LayerDesc	typeref:typename:bool
+baseFile	include/olcPixelGameEngine.h	/^		std::ifstream baseFile;$/;"	m	class:olc::ResourcePack	typeref:typename:std::ifstream
+cart	include/olcPixelGameEngine.h	/^		v2d_generic  cart() { return { std::cos(y) * x, std::sin(y) * x }; }$/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+ceil	include/olcPixelGameEngine.h	/^		v2d_generic  ceil() const { return v2d_generic(std::ceil(x), std::ceil(y)); }$/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+clean	build/Makefile	/^clean:$/;"	t
+clean/fast	build/Makefile	/^clean\/fast: clean$/;"	t
+cmake_check_build_system	build/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_force	build/Makefile	/^cmake_force:$/;"	t
+col	include/olcPixelGameEngine.h	/^			olc::Pixel col;$/;"	m	struct:olc::Renderer_OGL33::locVertex	typeref:typename:olc::Pixel
+const	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
+cross	include/olcPixelGameEngine.h	/^		T cross(const v2d_generic& rhs) const { return this->x * rhs.y - this->y * rhs.x; }$/;"	f	struct:olc::v2d_generic	typeref:typename:T
+decal	include/olcPixelGameEngine.h	/^		olc::Decal* decal = nullptr;$/;"	m	struct:olc::DecalInstance	typeref:typename:olc::Decal *
+default_target	build/Makefile	/^default_target: all$/;"	t
+depend	build/Makefile	/^depend:$/;"	t
+dot	include/olcPixelGameEngine.h	/^		T dot(const v2d_generic& rhs) const { return this->x * rhs.x + this->y * rhs.y; }$/;"	f	struct:olc::v2d_generic	typeref:typename:T
+edit_cache	build/Makefile	/^edit_cache:$/;"	t
+edit_cache/fast	build/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+fBlendFactor	include/olcPixelGameEngine.h	/^		float		fBlendFactor = 1.0f;$/;"	m	class:olc::PixelGameEngine	typeref:typename:float
+fFrameTimer	include/olcPixelGameEngine.h	/^		float		fFrameTimer = 1.0f;$/;"	m	class:olc::PixelGameEngine	typeref:typename:float
+fLastElapsed	include/olcPixelGameEngine.h	/^		float		fLastElapsed = 0.0f;$/;"	m	class:olc::PixelGameEngine	typeref:typename:float
+floor	include/olcPixelGameEngine.h	/^		v2d_generic  floor() const { return v2d_generic(std::floor(x), std::floor(y)); }$/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+focus_callback	include/olcPixelGameEngine.h	/^		static EM_BOOL focus_callback(int eventType, const EmscriptenFocusEvent* focusEvent, void* use/;"	f	class:olc::Platform_Emscripten	typeref:typename:EM_BOOL
+fontDecal	include/olcPixelGameEngine.h	/^		Decal*      fontDecal = nullptr;$/;"	m	class:olc::PixelGameEngine	typeref:typename:Decal *
+fontSprite	include/olcPixelGameEngine.h	/^		Sprite*     fontSprite = nullptr;$/;"	m	class:olc::PixelGameEngine	typeref:typename:Sprite *
+funcHook	include/olcPixelGameEngine.h	/^		std::function<void()> funcHook = nullptr;$/;"	m	struct:olc::LayerDesc	typeref:typename:std::function<void ()>
+funcPixelMode	include/olcPixelGameEngine.h	/^		std::function<olc::Pixel(const int x, const int y, const olc::Pixel&, const olc::Pixel&)> func/;"	m	class:olc::PixelGameEngine	typeref:typename:std::function<olc::Pixel (const int x,const int y,const olc::Pixel &,const olc::Pixel &)>
+g	include/olcPixelGameEngine.h	/^			struct { uint8_t r; uint8_t g; uint8_t b; uint8_t a; };$/;"	m	struct:olc::Pixel::__anon2476a4fe010a::__anon2476a4fe0208	typeref:typename:uint8_t
+gdistartup	include/olcPixelGameEngine.h	/^	} gdistartup;$/;"	v	namespace:olc	typeref:class:olc::GDIPlusStartup
+glDeviceContext	include/olcPixelGameEngine.h	/^		glDeviceContext_t glDeviceContext = 0;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:glDeviceContext_t
+glDeviceContext_t	include/olcPixelGameEngine.h	/^	typedef HDC glDeviceContext_t;$/;"	t	typeref:typename:HDC
+glDeviceContext_t	include/olcPixelGameEngine.h	/^	typedef X11::GLXContext glDeviceContext_t;$/;"	t	typeref:typename:X11::GLXContext
+glRenderContext	include/olcPixelGameEngine.h	/^		glRenderContext_t glRenderContext = 0;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:glRenderContext_t
+glRenderContext_t	include/olcPixelGameEngine.h	/^	typedef HGLRC glRenderContext_t;$/;"	t	typeref:typename:HGLRC
+glRenderContext_t	include/olcPixelGameEngine.h	/^	typedef X11::GLXContext glRenderContext_t;$/;"	t	typeref:typename:X11::GLXContext
+glSwapIntervalEXT	include/olcPixelGameEngine.h	/^	static glSwapInterval_t* glSwapIntervalEXT;$/;"	v	typeref:typename:glSwapInterval_t *
+glSwapInterval_t	include/olcPixelGameEngine.h	/^	typedef int(glSwapInterval_t)(X11::Display* dpy, X11::GLXDrawable drawable, int interval);$/;"	t	typeref:typename:int ()(X11::Display * dpy,X11::GLXDrawable drawable,int interval)
+height	include/olcPixelGameEngine.h	/^		int32_t height = 0;$/;"	m	class:olc::Sprite	typeref:typename:int32_t
+help	build/Makefile	/^help:$/;"	t
+id	include/olcPixelGameEngine.h	/^		int32_t id = -1;$/;"	m	class:olc::Decal	typeref:typename:int32_t
+info_arch	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_arch	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_cray	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_cray	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_language_extensions_default	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_extensions_default = "INFO" ":" "extensions_default["$/;"	v	typeref:typename:const char *
+info_language_extensions_default	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_extensions_default = "INFO" ":" "extensions_default["$/;"	v	typeref:typename:const char *
+info_language_standard_default	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_standard_default =$/;"	v	typeref:typename:const char *
+info_language_standard_default	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_standard_default = "INFO" ":" "standard_default["$/;"	v	typeref:typename:const char *
+info_platform	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_platform	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate_version	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_simulate_version	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";$/;"	v	typeref:typename:char const *
+info_version	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";$/;"	v	typeref:typename:char const *
+info_version_internal	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INT/;"	v	typeref:typename:char const *
+info_version_internal	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INT/;"	v	typeref:typename:char const *
+inv	include/olcPixelGameEngine.h	/^	Pixel Pixel::inv() const$/;"	f	class:olc::Pixel	typeref:typename:Pixel
+keyboard_callback	include/olcPixelGameEngine.h	/^		static EM_BOOL keyboard_callback(int eventType, const EmscriptenKeyboardEvent* e, void* userDa/;"	f	class:olc::Platform_Emscripten	typeref:typename:EM_BOOL
+loader	include/olcPixelGameEngine.h	/^		static std::unique_ptr<olc::ImageLoader> loader;$/;"	m	class:olc::Sprite	typeref:typename:std::unique_ptr<olc::ImageLoader>
+loader	include/olcPixelGameEngine.h	/^	std::unique_ptr<ImageLoader> olc::Sprite::loader = nullptr;$/;"	m	class:olc::olc::Sprite	typeref:typename:std::unique_ptr<ImageLoader>
+locAttachShader	include/olcPixelGameEngine.h	/^		locAttachShader_t* locAttachShader = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locAttachShader_t *
+locAttachShader_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locAttachShader_t(GLuint program, GLuint shader);$/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLuint program,GLuint shader)
+locBindBuffer	include/olcPixelGameEngine.h	/^		locBindBuffer_t* locBindBuffer = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locBindBuffer_t *
+locBindBuffer_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locBindBuffer_t(GLenum target, GLuint buffer);$/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLenum target,GLuint buffer)
+locBindVertexArray	include/olcPixelGameEngine.h	/^		locBindVertexArray_t* locBindVertexArray = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locBindVertexArray_t *
+locBindVertexArray_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locBindVertexArray_t(GLuint array);$/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLuint array)
+locBufferData	include/olcPixelGameEngine.h	/^		locBufferData_t* locBufferData = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locBufferData_t *
+locBufferData_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locBufferData_t(GLenum target, GLsizeiptr size, const void* data, GLenum/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLenum target,GLsizeiptr size,const void * data,GLenum usage)
+locCompileShader	include/olcPixelGameEngine.h	/^		locCompileShader_t* locCompileShader = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locCompileShader_t *
+locCompileShader_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locCompileShader_t(GLuint shader);$/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLuint shader)
+locCreateProgram	include/olcPixelGameEngine.h	/^		locCreateProgram_t* locCreateProgram = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locCreateProgram_t *
+locCreateProgram_t	include/olcPixelGameEngine.h	/^	typedef GLuint CALLSTYLE locCreateProgram_t(void);$/;"	t	namespace:olc	typeref:typename:GLuint CALLSTYLE ()(void)
+locCreateShader	include/olcPixelGameEngine.h	/^		locCreateShader_t* locCreateShader = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locCreateShader_t *
+locCreateShader_t	include/olcPixelGameEngine.h	/^	typedef GLuint CALLSTYLE locCreateShader_t(GLenum type);$/;"	t	namespace:olc	typeref:typename:GLuint CALLSTYLE ()(GLenum type)
+locDeleteProgram	include/olcPixelGameEngine.h	/^		locDeleteProgram_t* locDeleteProgram = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locDeleteProgram_t *
+locDeleteProgram_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locDeleteProgram_t(GLuint program);$/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLuint program)
+locDeleteShader	include/olcPixelGameEngine.h	/^		locDeleteShader_t* locDeleteShader = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locDeleteShader_t *
+locDeleteShader_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locDeleteShader_t(GLuint shader);$/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLuint shader)
+locEnableVertexAttribArray	include/olcPixelGameEngine.h	/^		locEnableVertexAttribArray_t* locEnableVertexAttribArray = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locEnableVertexAttribArray_t *
+locEnableVertexAttribArray_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locEnableVertexAttribArray_t(GLuint index);$/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLuint index)
+locGenBuffers	include/olcPixelGameEngine.h	/^		locGenBuffers_t* locGenBuffers = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locGenBuffers_t *
+locGenBuffers_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locGenBuffers_t(GLsizei n, GLuint* buffers);$/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLsizei n,GLuint * buffers)
+locGenVertexArrays	include/olcPixelGameEngine.h	/^		locGenVertexArrays_t* locGenVertexArrays = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locGenVertexArrays_t *
+locGenVertexArrays_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locGenVertexArrays_t(GLsizei n, GLuint* arrays);$/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLsizei n,GLuint * arrays)
+locGetShaderInfoLog	include/olcPixelGameEngine.h	/^		locGetShaderInfoLog_t* locGetShaderInfoLog = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locGetShaderInfoLog_t *
+locGetShaderInfoLog_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locGetShaderInfoLog_t(GLuint shader, GLsizei bufSize, GLsizei* length, G/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLuint shader,GLsizei bufSize,GLsizei * length,GLchar * infoLog)
+locLinkProgram	include/olcPixelGameEngine.h	/^		locLinkProgram_t* locLinkProgram = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locLinkProgram_t *
+locLinkProgram_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locLinkProgram_t(GLuint program);$/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLuint program)
+locShaderSource	include/olcPixelGameEngine.h	/^		locShaderSource_t* locShaderSource = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locShaderSource_t *
+locShaderSource_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locShaderSource_t(GLuint shader, GLsizei count, const GLchar* const* str/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLuint shader,GLsizei count,const GLchar * const * string,const GLint * length)
+locShaderSource_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locShaderSource_t(GLuint shader, GLsizei count, const GLchar** string, c/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLuint shader,GLsizei count,const GLchar ** string,const GLint * length)
+locSwapInterval	include/olcPixelGameEngine.h	/^		locSwapInterval_t* locSwapInterval = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locSwapInterval_t *
+locSwapInterval_t	include/olcPixelGameEngine.h	/^	typedef EGLBoolean(locSwapInterval_t)(EGLDisplay display, EGLint interval);$/;"	t	typeref:typename:EGLBoolean ()(EGLDisplay display,EGLint interval)
+locSwapInterval_t	include/olcPixelGameEngine.h	/^	typedef int(locSwapInterval_t)(X11::Display* dpy, X11::GLXDrawable drawable, int interval);$/;"	t	typeref:typename:int ()(X11::Display * dpy,X11::GLXDrawable drawable,int interval)
+locSwapInterval_t	include/olcPixelGameEngine.h	/^	typedef void __stdcall locSwapInterval_t(GLsizei n);$/;"	t	typeref:typename:void __stdcall ()(GLsizei n)
+locUseProgram	include/olcPixelGameEngine.h	/^		locUseProgram_t* locUseProgram = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locUseProgram_t *
+locUseProgram_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locUseProgram_t(GLuint program);$/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLuint program)
+locVertex	include/olcPixelGameEngine.h	/^		struct locVertex$/;"	s	class:olc::Renderer_OGL33
+locVertexAttribPointer	include/olcPixelGameEngine.h	/^		locVertexAttribPointer_t* locVertexAttribPointer = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locVertexAttribPointer_t *
+locVertexAttribPointer_t	include/olcPixelGameEngine.h	/^	typedef void CALLSTYLE locVertexAttribPointer_t(GLuint index, GLint size, GLenum type, GLboolea/;"	t	namespace:olc	typeref:typename:void CALLSTYLE ()(GLuint index,GLint size,GLenum type,GLboolean normalized,GLsizei stride,const void * pointer)
+mFullScreen	include/olcPixelGameEngine.h	/^		bool mFullScreen = false;$/;"	m	class:olc::Renderer_OGL10	typeref:typename:bool
+mFullScreen	include/olcPixelGameEngine.h	/^		bool mFullScreen = false;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:bool
+m_nFS	include/olcPixelGameEngine.h	/^		uint32_t m_nFS = 0;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:uint32_t
+m_nQuadShader	include/olcPixelGameEngine.h	/^		uint32_t m_nQuadShader = 0;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:uint32_t
+m_nVS	include/olcPixelGameEngine.h	/^		uint32_t m_nVS = 0;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:uint32_t
+m_tp1	include/olcPixelGameEngine.h	/^		std::chrono::time_point<std::chrono::system_clock> m_tp1, m_tp2;$/;"	m	class:olc::PixelGameEngine	typeref:typename:std::chrono::time_point<std::chrono::system_clock>
+m_tp2	include/olcPixelGameEngine.h	/^		std::chrono::time_point<std::chrono::system_clock> m_tp1, m_tp2;$/;"	m	class:olc::PixelGameEngine	typeref:typename:std::chrono::time_point<std::chrono::system_clock>
+m_vaQuad	include/olcPixelGameEngine.h	/^		uint32_t m_vaQuad = 0;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:uint32_t
+m_vbQuad	include/olcPixelGameEngine.h	/^		uint32_t m_vbQuad = 0;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:uint32_t
+mag	include/olcPixelGameEngine.h	/^		T mag() const { return T(std::sqrt(x * x + y * y)); }$/;"	f	struct:olc::v2d_generic	typeref:typename:T
+mag2	include/olcPixelGameEngine.h	/^		T mag2() const { return x * x + y * y; }$/;"	f	struct:olc::v2d_generic	typeref:typename:T
+main	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f	typeref:typename:void
+main	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
+main	src/Isometric_Finder.cpp	/^int main()$/;"	f	typeref:typename:int
+makeposix	include/olcPixelGameEngine.h	/^	std::string ResourcePack::makeposix(const std::string& path)$/;"	f	class:olc::ResourcePack	typeref:typename:std::string
+mapFiles	include/olcPixelGameEngine.h	/^		std::map<std::string, sResourceFile> mapFiles;$/;"	m	class:olc::ResourcePack	typeref:typename:std::map<std::string,sResourceFile>
+mapKeys	include/olcPixelGameEngine.h	/^	static std::map<size_t, uint8_t> mapKeys;$/;"	v	namespace:olc	typeref:typename:std::map<size_t,uint8_t>
+max	include/olcPixelGameEngine.h	/^		v2d_generic  max(const v2d_generic& v) const { return v2d_generic(std::max(x, v.x), std::max(y/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+max	include/olcPixelGameEngine.h	/^#define max(/;"	d
+min	include/olcPixelGameEngine.h	/^		v2d_generic  min(const v2d_generic& v) const { return v2d_generic(std::min(x, v.x), std::min(y/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+min	include/olcPixelGameEngine.h	/^#define min(/;"	d
+mode	include/olcPixelGameEngine.h	/^		olc::DecalMode mode = olc::DecalMode::NORMAL;$/;"	m	struct:olc::DecalInstance	typeref:typename:olc::DecalMode
+modeSample	include/olcPixelGameEngine.h	/^		Mode modeSample = Mode::NORMAL;$/;"	m	class:olc::Sprite	typeref:typename:Mode
+mouse_callback	include/olcPixelGameEngine.h	/^		static EM_BOOL mouse_callback(int eventType, const EmscriptenMouseEvent* e, void* userData)$/;"	f	class:olc::Platform_Emscripten	typeref:typename:EM_BOOL
+n	include/olcPixelGameEngine.h	/^			uint32_t n = nDefaultPixel;$/;"	m	union:olc::Pixel::__anon2476a4fe010a	typeref:typename:uint32_t
+nDecalMode	include/olcPixelGameEngine.h	/^		DecalMode   nDecalMode = DecalMode::NORMAL;$/;"	m	class:olc::PixelGameEngine	typeref:typename:DecalMode
+nDecalMode	include/olcPixelGameEngine.h	/^		olc::DecalMode nDecalMode = olc::DecalMode(-1); \/\/ Thanks Gusgo & Bispoo$/;"	m	class:olc::Renderer_OGL10	typeref:typename:olc::DecalMode
+nDecalMode	include/olcPixelGameEngine.h	/^		olc::DecalMode nDecalMode = olc::DecalMode(-1); \/\/ Thanks Gusgo & Bispoo$/;"	m	class:olc::Renderer_OGL33	typeref:typename:olc::DecalMode
+nDefaultAlpha	include/olcPixelGameEngine.h	/^	constexpr uint8_t  nDefaultAlpha = 0xFF;$/;"	v	namespace:olc	typeref:typename:uint8_t
+nDefaultPixel	include/olcPixelGameEngine.h	/^	constexpr uint32_t nDefaultPixel = (nDefaultAlpha << 24);$/;"	v	namespace:olc	typeref:typename:uint32_t
+nFrameCount	include/olcPixelGameEngine.h	/^		int			nFrameCount = 0;$/;"	m	class:olc::PixelGameEngine	typeref:typename:int
+nLastFPS	include/olcPixelGameEngine.h	/^		uint32_t	nLastFPS = 0;$/;"	m	class:olc::PixelGameEngine	typeref:typename:uint32_t
+nMouseButtons	include/olcPixelGameEngine.h	/^	constexpr uint8_t  nMouseButtons = 5;$/;"	v	namespace:olc	typeref:typename:uint8_t
+nMouseWheelDelta	include/olcPixelGameEngine.h	/^		int32_t		nMouseWheelDelta = 0;$/;"	m	class:olc::PixelGameEngine	typeref:typename:int32_t
+nMouseWheelDeltaCache	include/olcPixelGameEngine.h	/^		int32_t		nMouseWheelDeltaCache = 0;$/;"	m	class:olc::PixelGameEngine	typeref:typename:int32_t
+nOffset	include/olcPixelGameEngine.h	/^		struct sResourceFile { uint32_t nSize; uint32_t nOffset; };$/;"	m	struct:olc::ResourcePack::sResourceFile	typeref:typename:uint32_t
+nPixelMode	include/olcPixelGameEngine.h	/^		Pixel::Mode	nPixelMode = Pixel::NORMAL;$/;"	m	class:olc::PixelGameEngine	typeref:typename:Pixel::Mode
+nResID	include/olcPixelGameEngine.h	/^		uint32_t nResID = 0;$/;"	m	struct:olc::LayerDesc	typeref:typename:uint32_t
+nSize	include/olcPixelGameEngine.h	/^		struct sResourceFile { uint32_t nSize; uint32_t nOffset; };$/;"	m	struct:olc::ResourcePack::sResourceFile	typeref:typename:uint32_t
+nTargetLayer	include/olcPixelGameEngine.h	/^		uint8_t		nTargetLayer = 0;$/;"	m	class:olc::PixelGameEngine	typeref:typename:uint8_t
+norm	include/olcPixelGameEngine.h	/^		v2d_generic  norm() const { T r = 1 \/ mag(); return v2d_generic(x * r, y * r); }$/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+olc	include/olcPixelGameEngine.h	/^namespace olc {$/;"	n
+olc	include/olcPixelGameEngine.h	/^namespace olc$/;"	n
+olcT	include/olcPixelGameEngine.h	/^	#define olcT(/;"	d
+olc_ColourMap	include/olcPixelGameEngine.h	/^		X11::Colormap                olc_ColourMap;$/;"	m	class:olc::Platform_Linux	typeref:typename:X11::Colormap
+olc_Config	include/olcPixelGameEngine.h	/^		EGLConfig olc_Config;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:EGLConfig
+olc_ConfigureSystem	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_ConfigureSystem()$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_ConstructFontSheet	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_ConstructFontSheet()$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_Context	include/olcPixelGameEngine.h	/^		EGLContext olc_Context;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:EGLContext
+olc_CoreUpdate	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_CoreUpdate()$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_Display	include/olcPixelGameEngine.h	/^		EGLDisplay olc_Display;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:EGLDisplay
+olc_Display	include/olcPixelGameEngine.h	/^		X11::Display* olc_Display = nullptr;$/;"	m	class:olc::Platform_Linux	typeref:typename:X11::Display *
+olc_Display	include/olcPixelGameEngine.h	/^		X11::Display* olc_Display = nullptr;$/;"	m	class:olc::Renderer_OGL10	typeref:typename:X11::Display *
+olc_Display	include/olcPixelGameEngine.h	/^		X11::Display* olc_Display = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:X11::Display *
+olc_IsRunning	include/olcPixelGameEngine.h	/^	bool PixelGameEngine::olc_IsRunning()$/;"	f	class:olc::PixelGameEngine	typeref:typename:bool
+olc_OnPageUnload	include/olcPixelGameEngine.h	/^	EMSCRIPTEN_KEEPALIVE inline int olc_OnPageUnload()$/;"	f	typeref:typename:EMSCRIPTEN_KEEPALIVE int
+olc_PGE_UpdateWindowSize	include/olcPixelGameEngine.h	/^	EMSCRIPTEN_KEEPALIVE inline void olc_PGE_UpdateWindowSize(int width, int height)$/;"	f	typeref:typename:EMSCRIPTEN_KEEPALIVE void
+olc_PrepareEngine	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_PrepareEngine()$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_Reanimate	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_Reanimate()$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_SetWindowAttribs	include/olcPixelGameEngine.h	/^		X11::XSetWindowAttributes    olc_SetWindowAttribs;$/;"	m	class:olc::Platform_Linux	typeref:typename:X11::XSetWindowAttributes
+olc_Surface	include/olcPixelGameEngine.h	/^		EGLSurface olc_Surface;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:EGLSurface
+olc_Terminate	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_Terminate()$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_UpdateKeyFocus	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_UpdateKeyFocus(bool state)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_UpdateKeyState	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_UpdateKeyState(int32_t key, bool state)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_UpdateMouse	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_UpdateMouse(int32_t x, int32_t y)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_UpdateMouseFocus	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_UpdateMouseFocus(bool state)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_UpdateMouseState	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_UpdateMouseState(int32_t button, bool state)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_UpdateMouseWheel	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_UpdateMouseWheel(int32_t delta)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_UpdateViewport	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_UpdateViewport()$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_UpdateWindowSize	include/olcPixelGameEngine.h	/^	void PixelGameEngine::olc_UpdateWindowSize(int32_t x, int32_t y)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+olc_VisualInfo	include/olcPixelGameEngine.h	/^		X11::XVisualInfo* olc_VisualInfo = nullptr;$/;"	m	class:olc::Renderer_OGL10	typeref:typename:X11::XVisualInfo *
+olc_VisualInfo	include/olcPixelGameEngine.h	/^		X11::XVisualInfo* olc_VisualInfo = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:X11::XVisualInfo *
+olc_VisualInfo	include/olcPixelGameEngine.h	/^		X11::XVisualInfo* olc_VisualInfo;$/;"	m	class:olc::Platform_Linux	typeref:typename:X11::XVisualInfo *
+olc_Window	include/olcPixelGameEngine.h	/^		X11::Window					 olc_Window;$/;"	m	class:olc::Platform_Linux	typeref:typename:X11::Window
+olc_Window	include/olcPixelGameEngine.h	/^		X11::Window* olc_Window = nullptr;$/;"	m	class:olc::Renderer_OGL10	typeref:typename:X11::Window *
+olc_Window	include/olcPixelGameEngine.h	/^		X11::Window* olc_Window = nullptr;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:X11::Window *
+olc_WindowEvent	include/olcPixelGameEngine.h	/^		static LRESULT CALLBACK olc_WindowEvent(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)$/;"	f	class:olc::Platform_Windows	typeref:typename:LRESULT CALLBACK
+olc_WindowRoot	include/olcPixelGameEngine.h	/^		X11::Window					 olc_WindowRoot;$/;"	m	class:olc::Platform_Linux	typeref:typename:X11::Window
+olc_hWnd	include/olcPixelGameEngine.h	/^		HWND olc_hWnd = nullptr;$/;"	m	class:olc::Platform_Windows	typeref:typename:HWND
+operator !=	include/olcPixelGameEngine.h	/^		bool operator != (const v2d_generic& rhs) const { return (this->x != rhs.x || this->y != rhs.y/;"	f	struct:olc::v2d_generic	typeref:typename:bool
+operator !=	include/olcPixelGameEngine.h	/^	bool Pixel::operator!=(const Pixel& p) const$/;"	f	class:olc::Pixel	typeref:typename:bool
+operator *	include/olcPixelGameEngine.h	/^		v2d_generic  operator *  (const T& rhs)           const { return v2d_generic(this->x * rhs, th/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+operator *	include/olcPixelGameEngine.h	/^		v2d_generic  operator *  (const v2d_generic& rhs) const { return v2d_generic(this->x * rhs.x, /;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+operator *	include/olcPixelGameEngine.h	/^	Pixel  Pixel::operator * (const float i) const$/;"	f	class:olc::Pixel	typeref:typename:Pixel
+operator *	include/olcPixelGameEngine.h	/^	template<class T> inline v2d_generic<T> operator * (const double& lhs, const v2d_generic<T>& rh/;"	f	namespace:olc	typeref:typename:v2d_generic<T>
+operator *	include/olcPixelGameEngine.h	/^	template<class T> inline v2d_generic<T> operator * (const float& lhs, const v2d_generic<T>& rhs/;"	f	namespace:olc	typeref:typename:v2d_generic<T>
+operator *	include/olcPixelGameEngine.h	/^	template<class T> inline v2d_generic<T> operator * (const int& lhs, const v2d_generic<T>& rhs)$/;"	f	namespace:olc	typeref:typename:v2d_generic<T>
+operator *=	include/olcPixelGameEngine.h	/^		v2d_generic& operator *= (const T& rhs) { this->x *= rhs; this->y *= rhs; return *this; }$/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic &
+operator *=	include/olcPixelGameEngine.h	/^		v2d_generic& operator *= (const v2d_generic& rhs) { this->x *= rhs.x; this->y *= rhs.y; return/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic &
+operator *=	include/olcPixelGameEngine.h	/^	Pixel& Pixel::operator *=(const float i)$/;"	f	class:olc::Pixel	typeref:typename:Pixel &
+operator +	include/olcPixelGameEngine.h	/^		v2d_generic  operator +  () const { return { +x, +y }; }$/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+operator +	include/olcPixelGameEngine.h	/^		v2d_generic  operator +  (const v2d_generic& rhs) const { return v2d_generic(this->x + rhs.x, /;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+operator +	include/olcPixelGameEngine.h	/^	Pixel  Pixel::operator + (const Pixel& p) const$/;"	f	class:olc::Pixel	typeref:typename:Pixel
+operator +=	include/olcPixelGameEngine.h	/^		v2d_generic& operator += (const v2d_generic& rhs) { this->x += rhs.x; this->y += rhs.y; return/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic &
+operator +=	include/olcPixelGameEngine.h	/^	Pixel& Pixel::operator += (const Pixel& p)$/;"	f	class:olc::Pixel	typeref:typename:Pixel &
+operator -	include/olcPixelGameEngine.h	/^		v2d_generic  operator -  () const { return { -x, -y }; }$/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+operator -	include/olcPixelGameEngine.h	/^		v2d_generic  operator -  (const v2d_generic& rhs) const { return v2d_generic(this->x - rhs.x, /;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+operator -	include/olcPixelGameEngine.h	/^	Pixel  Pixel::operator - (const Pixel& p) const$/;"	f	class:olc::Pixel	typeref:typename:Pixel
+operator -=	include/olcPixelGameEngine.h	/^		v2d_generic& operator -= (const v2d_generic& rhs) { this->x -= rhs.x; this->y -= rhs.y; return/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic &
+operator -=	include/olcPixelGameEngine.h	/^	Pixel& Pixel::operator -= (const Pixel& p) \/\/ Thanks Au Lit$/;"	f	class:olc::Pixel	typeref:typename:Pixel &
+operator /	include/olcPixelGameEngine.h	/^		v2d_generic  operator \/  (const T& rhs)           const { return v2d_generic(this->x \/ rhs, /;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+operator /	include/olcPixelGameEngine.h	/^		v2d_generic  operator \/  (const v2d_generic& rhs) const { return v2d_generic(this->x \/ rhs.x/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+operator /	include/olcPixelGameEngine.h	/^	Pixel  Pixel::operator \/ (const float i) const$/;"	f	class:olc::Pixel	typeref:typename:Pixel
+operator /	include/olcPixelGameEngine.h	/^	template<class T> inline v2d_generic<T> operator \/ (const double& lhs, const v2d_generic<T>& r/;"	f	namespace:olc	typeref:typename:v2d_generic<T>
+operator /	include/olcPixelGameEngine.h	/^	template<class T> inline v2d_generic<T> operator \/ (const float& lhs, const v2d_generic<T>& rh/;"	f	namespace:olc	typeref:typename:v2d_generic<T>
+operator /	include/olcPixelGameEngine.h	/^	template<class T> inline v2d_generic<T> operator \/ (const int& lhs, const v2d_generic<T>& rhs)$/;"	f	namespace:olc	typeref:typename:v2d_generic<T>
+operator /=	include/olcPixelGameEngine.h	/^		v2d_generic& operator \/= (const T& rhs) { this->x \/= rhs; this->y \/= rhs; return *this; }$/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic &
+operator /=	include/olcPixelGameEngine.h	/^		v2d_generic& operator \/= (const v2d_generic& rhs) { this->x \/= rhs.x; this->y \/= rhs.y; ret/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic &
+operator /=	include/olcPixelGameEngine.h	/^	Pixel& Pixel::operator \/=(const float i)$/;"	f	class:olc::Pixel	typeref:typename:Pixel &
+operator <	include/olcPixelGameEngine.h	/^	template<class T, class U> inline bool operator < (const v2d_generic<T>& lhs, const v2d_generic/;"	f	namespace:olc	typeref:typename:bool
+operator <<	include/olcPixelGameEngine.h	/^		friend std::ostream& operator << (std::ostream& os, const v2d_generic& rhs) { os << rhs.str();/;"	f	namespace:olc	typeref:typename:std::ostream &
+operator ==	include/olcPixelGameEngine.h	/^		bool operator == (const v2d_generic& rhs) const { return (this->x == rhs.x && this->y == rhs.y/;"	f	struct:olc::v2d_generic	typeref:typename:bool
+operator ==	include/olcPixelGameEngine.h	/^	bool Pixel::operator==(const Pixel& p) const$/;"	f	class:olc::Pixel	typeref:typename:bool
+operator >	include/olcPixelGameEngine.h	/^	template<class T, class U> inline bool operator > (const v2d_generic<T>& lhs, const v2d_generic/;"	f	namespace:olc	typeref:typename:bool
+operator v2d_generic<double>	include/olcPixelGameEngine.h	/^		operator v2d_generic<double>() const { return { static_cast<double>(this->x), static_cast<doub/;"	f	struct:olc::v2d_generic
+operator v2d_generic<float>	include/olcPixelGameEngine.h	/^		operator v2d_generic<float>() const { return { static_cast<float>(this->x), static_cast<float>/;"	f	struct:olc::v2d_generic
+operator v2d_generic<int32_t>	include/olcPixelGameEngine.h	/^		operator v2d_generic<int32_t>() const { return { static_cast<int32_t>(this->x), static_cast<in/;"	f	struct:olc::v2d_generic
+pColData	include/olcPixelGameEngine.h	/^		std::vector<olc::Pixel> pColData;$/;"	m	class:olc::Sprite	typeref:typename:std::vector<olc::Pixel>
+pDecal	include/olcPixelGameEngine.h	/^		std::unique_ptr<olc::Decal> pDecal = nullptr;$/;"	m	class:olc::Renderable	typeref:typename:std::unique_ptr<olc::Decal>
+pDrawTarget	include/olcPixelGameEngine.h	/^		olc::Renderable pDrawTarget;$/;"	m	struct:olc::LayerDesc	typeref:typename:olc::Renderable
+pDrawTarget	include/olcPixelGameEngine.h	/^		olc::Sprite*     pDrawTarget = nullptr;$/;"	m	class:olc::PixelGameEngine	typeref:typename:olc::Sprite *
+pKeyNewState	include/olcPixelGameEngine.h	/^		bool		pKeyNewState[256] = { 0 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:bool[256]
+pKeyOldState	include/olcPixelGameEngine.h	/^		bool		pKeyOldState[256] = { 0 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:bool[256]
+pKeyboardState	include/olcPixelGameEngine.h	/^		HWButton	pKeyboardState[256] = { 0 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:HWButton[256]
+pMouseNewState	include/olcPixelGameEngine.h	/^		bool		pMouseNewState[nMouseButtons] = { 0 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:bool[]
+pMouseOldState	include/olcPixelGameEngine.h	/^		bool		pMouseOldState[nMouseButtons] = { 0 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:bool[]
+pMouseState	include/olcPixelGameEngine.h	/^		HWButton	pMouseState[nMouseButtons] = { 0 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:HWButton[]
+pSprite	include/olcPixelGameEngine.h	/^		std::unique_ptr<olc::Sprite> pSprite = nullptr;$/;"	m	class:olc::Renderable	typeref:typename:std::unique_ptr<olc::Sprite>
+pVertexMem	include/olcPixelGameEngine.h	/^		locVertex pVertexMem[OLC_MAX_VERTS];$/;"	m	class:olc::Renderer_OGL33	typeref:typename:locVertex[]
+pWorld	src/Isometric_Finder.cpp	/^	int *pWorld = nullptr;$/;"	m	class:IsometricDemo	typeref:typename:int *	file:
+perp	include/olcPixelGameEngine.h	/^		v2d_generic  perp() const { return v2d_generic(-y, x); }$/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+pge	include/olcPixelGameEngine.h	/^		static PixelGameEngine* pge;$/;"	m	class:olc::PGEX	typeref:typename:PixelGameEngine *
+pge	include/olcPixelGameEngine.h	/^	olc::PixelGameEngine* olc::PGEX::pge = nullptr;$/;"	m	class:olc::olc::PGEX	typeref:typename:olc::PixelGameEngine *
+pgex_Register	include/olcPixelGameEngine.h	/^	void PixelGameEngine::pgex_Register(olc::PGEX* pgex)$/;"	f	class:olc::PixelGameEngine	typeref:typename:void
+platform	include/olcPixelGameEngine.h	/^	static std::unique_ptr<Platform> platform;$/;"	v	namespace:olc	typeref:typename:std::unique_ptr<Platform>
+pngReadStream	include/olcPixelGameEngine.h	/^	void pngReadStream(png_structp pngPtr, png_bytep data, png_size_t length)$/;"	f	namespace:olc	typeref:typename:void
+points	include/olcPixelGameEngine.h	/^		uint32_t points = 0;$/;"	m	struct:olc::DecalInstance	typeref:typename:uint32_t
+polar	include/olcPixelGameEngine.h	/^		v2d_generic  polar() { return { mag(), std::atan2(y, x) }; }$/;"	f	struct:olc::v2d_generic	typeref:typename:v2d_generic
+pos	include/olcPixelGameEngine.h	/^			float pos[3];$/;"	m	struct:olc::Renderer_OGL33::locVertex	typeref:typename:float[3]
+pos	include/olcPixelGameEngine.h	/^		std::vector<olc::vf2d> pos;$/;"	m	struct:olc::DecalInstance	typeref:typename:std::vector<olc::vf2d>
+preinstall	build/Makefile	/^preinstall: all$/;"	t
+preinstall/fast	build/Makefile	/^preinstall\/fast:$/;"	t
+ptrPGE	include/olcPixelGameEngine.h	/^		static olc::PixelGameEngine* ptrPGE;$/;"	m	class:olc::Platform	typeref:typename:olc::PixelGameEngine *
+ptrPGE	include/olcPixelGameEngine.h	/^		static olc::PixelGameEngine* ptrPGE;$/;"	m	class:olc::Renderer	typeref:typename:olc::PixelGameEngine *
+ptrPGE	include/olcPixelGameEngine.h	/^	olc::PixelGameEngine* olc::Platform::ptrPGE = nullptr;$/;"	m	class:olc::olc::Platform	typeref:typename:olc::PixelGameEngine *
+ptrPGE	include/olcPixelGameEngine.h	/^	olc::PixelGameEngine* olc::Renderer::ptrPGE = nullptr;$/;"	m	class:olc::olc::Renderer	typeref:typename:olc::PixelGameEngine *
+qnxnto	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+qnxnto	build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+r	include/olcPixelGameEngine.h	/^			struct { uint8_t r; uint8_t g; uint8_t b; uint8_t a; };$/;"	m	struct:olc::Pixel::__anon2476a4fe010a::__anon2476a4fe0208	typeref:typename:uint8_t
+rcode	include/olcPixelGameEngine.h	/^	enum rcode { FAIL = 0, OK = 1, NO_FILE = -1 };$/;"	g	namespace:olc
+rebuild_cache	build/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache/fast	build/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+rendBlankQuad	include/olcPixelGameEngine.h	/^		olc::Renderable rendBlankQuad;$/;"	m	class:olc::Renderer_OGL33	typeref:typename:olc::Renderable
+renderer	include/olcPixelGameEngine.h	/^	static std::unique_ptr<Renderer> renderer;$/;"	v	namespace:olc	typeref:typename:std::unique_ptr<Renderer>
+sAppName	include/olcPixelGameEngine.h	/^		std::string sAppName;$/;"	m	class:olc::PixelGameEngine	typeref:typename:std::string
+sResourceFile	include/olcPixelGameEngine.h	/^		struct sResourceFile { uint32_t nSize; uint32_t nOffset; };$/;"	s	class:olc::ResourcePack
+scramble	include/olcPixelGameEngine.h	/^	std::vector<char> ResourcePack::scramble(const std::vector<char>& data, const std::string& key)$/;"	f	class:olc::ResourcePack	typeref:typename:std::vector<char>
+scrollWheelUpdate	include/olcPixelGameEngine.h	/^		static void scrollWheelUpdate(id selff, SEL _sel, id theEvent) {$/;"	f	class:olc::Platform_GLUT	typeref:typename:void
+sprIsom	src/Isometric_Finder.cpp	/^	olc::Sprite *sprIsom = nullptr;$/;"	m	class:IsometricDemo	typeref:typename:olc::Sprite *	file:
+sprite	include/olcPixelGameEngine.h	/^		olc::Sprite* sprite = nullptr;$/;"	m	class:olc::Decal	typeref:typename:olc::Sprite *
+src/Isometric_Finder.cpp.i	build/Makefile	/^src\/Isometric_Finder.cpp.i:$/;"	t
+src/Isometric_Finder.cpp.o	build/Makefile	/^src\/Isometric_Finder.cpp.o:$/;"	t
+src/Isometric_Finder.cpp.s	build/Makefile	/^src\/Isometric_Finder.cpp.s:$/;"	t
+src/Isometric_Finder.i	build/Makefile	/^src\/Isometric_Finder.i: src\/Isometric_Finder.cpp.i$/;"	t
+src/Isometric_Finder.o	build/Makefile	/^src\/Isometric_Finder.o: src\/Isometric_Finder.cpp.o$/;"	t
+src/Isometric_Finder.s	build/Makefile	/^src\/Isometric_Finder.s: src\/Isometric_Finder.cpp.s$/;"	t
+str	include/olcPixelGameEngine.h	/^		const std::string str() const { return std::string("(") + std::to_string(this->x) + "," + std:/;"	f	struct:olc::v2d_generic	typeref:typename:const std::string
+tex	include/olcPixelGameEngine.h	/^			olc::vf2d tex;$/;"	m	struct:olc::Renderer_OGL33::locVertex	typeref:typename:olc::vf2d
+tint	include/olcPixelGameEngine.h	/^		olc::Pixel tint = olc::WHITE;$/;"	m	struct:olc::LayerDesc	typeref:typename:olc::Pixel
+tint	include/olcPixelGameEngine.h	/^		std::vector<olc::Pixel> tint;$/;"	m	struct:olc::DecalInstance	typeref:typename:std::vector<olc::Pixel>
+token	include/olcPixelGameEngine.h	/^		ULONG_PTR	token;$/;"	m	class:olc::GDIPlusStartup	typeref:typename:ULONG_PTR
+touch_callback	include/olcPixelGameEngine.h	/^		static EM_BOOL touch_callback(int eventType, const EmscriptenTouchEvent* e, void* userData)$/;"	f	class:olc::Platform_Emscripten	typeref:typename:EM_BOOL
+uv	include/olcPixelGameEngine.h	/^		std::vector<olc::vf2d> uv;$/;"	m	struct:olc::DecalInstance	typeref:typename:std::vector<olc::vf2d>
+v2d_generic	include/olcPixelGameEngine.h	/^		v2d_generic() : x(0), y(0) {}$/;"	f	struct:olc::v2d_generic
+v2d_generic	include/olcPixelGameEngine.h	/^		v2d_generic(T _x, T _y) : x(_x), y(_y) {}$/;"	f	struct:olc::v2d_generic
+v2d_generic	include/olcPixelGameEngine.h	/^		v2d_generic(const v2d_generic& v) : x(v.x), y(v.y) {}$/;"	f	struct:olc::v2d_generic
+v2d_generic	include/olcPixelGameEngine.h	/^	struct v2d_generic$/;"	s	namespace:olc
+vExtensions	include/olcPixelGameEngine.h	/^		std::vector<olc::PGEX*> vExtensions;$/;"	m	class:olc::PixelGameEngine	typeref:typename:std::vector<olc::PGEX * >
+vFontSpacing	include/olcPixelGameEngine.h	/^		std::vector<olc::vi2d> vFontSpacing;$/;"	m	class:olc::PixelGameEngine	typeref:typename:std::vector<olc::vi2d>
+vInvScreenSize	include/olcPixelGameEngine.h	/^		olc::vf2d	vInvScreenSize = { 1.0f \/ 256.0f, 1.0f \/ 240.0f };$/;"	m	class:olc::PixelGameEngine	typeref:typename:olc::vf2d
+vLayers	include/olcPixelGameEngine.h	/^		std::vector<LayerDesc> vLayers;$/;"	m	class:olc::PixelGameEngine	typeref:typename:std::vector<LayerDesc>
+vMemory	include/olcPixelGameEngine.h	/^		std::vector<char> vMemory;$/;"	m	struct:olc::ResourceBuffer	typeref:typename:std::vector<char>
+vMousePos	include/olcPixelGameEngine.h	/^		olc::vi2d	vMousePos = { 0, 0 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:olc::vi2d
+vMousePosCache	include/olcPixelGameEngine.h	/^		olc::vi2d	vMousePosCache = { 0, 0 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:olc::vi2d
+vMouseWindowPos	include/olcPixelGameEngine.h	/^		olc::vi2d   vMouseWindowPos = { 0, 0 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:olc::vi2d
+vOffset	include/olcPixelGameEngine.h	/^		olc::vf2d vOffset = { 0, 0 };$/;"	m	struct:olc::LayerDesc	typeref:typename:olc::vf2d
+vOrigin	src/Isometric_Finder.cpp	/^	olc::vi2d vOrigin = { 5, 1 };$/;"	m	class:IsometricDemo	typeref:typename:olc::vi2d	file:
+vPixel	include/olcPixelGameEngine.h	/^		olc::vf2d	vPixel = { 1.0f, 1.0f };$/;"	m	class:olc::PixelGameEngine	typeref:typename:olc::vf2d
+vPixelSize	include/olcPixelGameEngine.h	/^		olc::vi2d	vPixelSize = { 4, 4 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:olc::vi2d
+vScale	include/olcPixelGameEngine.h	/^		olc::vf2d vScale = { 1, 1 };$/;"	m	struct:olc::LayerDesc	typeref:typename:olc::vf2d
+vScreenPixelSize	include/olcPixelGameEngine.h	/^		olc::vi2d   vScreenPixelSize = { 4, 4 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:olc::vi2d
+vScreenSize	include/olcPixelGameEngine.h	/^		olc::vi2d	vScreenSize = { 256, 240 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:olc::vi2d
+vTileSize	src/Isometric_Finder.cpp	/^	olc::vi2d vTileSize = { 40, 20 };$/;"	m	class:IsometricDemo	typeref:typename:olc::vi2d	file:
+vUVScale	include/olcPixelGameEngine.h	/^		olc::vf2d vUVScale = { 1.0f, 1.0f };$/;"	m	class:olc::Decal	typeref:typename:olc::vf2d
+vViewPos	include/olcPixelGameEngine.h	/^		olc::vi2d	vViewPos = { 0, 0 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:olc::vi2d
+vViewSize	include/olcPixelGameEngine.h	/^		olc::vi2d	vViewSize = { 0,0 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:olc::vi2d
+vWindowSize	include/olcPixelGameEngine.h	/^		olc::vi2d	vWindowSize = { 0, 0 };$/;"	m	class:olc::PixelGameEngine	typeref:typename:olc::vi2d
+vWorldSize	src/Isometric_Finder.cpp	/^	olc::vi2d vWorldSize = { 20, 20 };$/;"	m	class:IsometricDemo	typeref:typename:olc::vi2d	file:
+vd2d	include/olcPixelGameEngine.h	/^	typedef v2d_generic<double> vd2d;$/;"	t	namespace:olc	typeref:typename:v2d_generic<double>
+vecDecalInstance	include/olcPixelGameEngine.h	/^		std::vector<DecalInstance> vecDecalInstance;$/;"	m	struct:olc::LayerDesc	typeref:typename:std::vector<DecalInstance>
+vf2d	include/olcPixelGameEngine.h	/^	typedef v2d_generic<float> vf2d;$/;"	t	namespace:olc	typeref:typename:v2d_generic<float>
+vi2d	include/olcPixelGameEngine.h	/^	typedef v2d_generic<int32_t> vi2d;$/;"	t	namespace:olc	typeref:typename:v2d_generic<int32_t>
+volatile	build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
+vu2d	include/olcPixelGameEngine.h	/^	typedef v2d_generic<uint32_t> vu2d;$/;"	t	namespace:olc	typeref:typename:v2d_generic<uint32_t>
+w	include/olcPixelGameEngine.h	/^		std::vector<float> w;$/;"	m	struct:olc::DecalInstance	typeref:typename:std::vector<float>
+wglSwapInterval	include/olcPixelGameEngine.h	/^	static wglSwapInterval_t* wglSwapInterval = nullptr;$/;"	v	typeref:typename:wglSwapInterval_t *
+wglSwapInterval_t	include/olcPixelGameEngine.h	/^	typedef BOOL(WINAPI wglSwapInterval_t) (int interval);$/;"	t	typeref:typename:BOOL (WINAPI)(int interval)
+wheel_callback	include/olcPixelGameEngine.h	/^		static EM_BOOL wheel_callback(int eventType, const EmscriptenWheelEvent* e, void* userData)$/;"	f	class:olc::Platform_Emscripten	typeref:typename:EM_BOOL
+width	include/olcPixelGameEngine.h	/^		int32_t width = 0;$/;"	m	class:olc::Sprite	typeref:typename:int32_t
+wsAppName	include/olcPixelGameEngine.h	/^		std::wstring wsAppName;$/;"	m	class:olc::Platform_Windows	typeref:typename:std::wstring
+x	include/olcPixelGameEngine.h	/^		T x = 0;$/;"	m	struct:olc::v2d_generic	typeref:typename:T
+y	include/olcPixelGameEngine.h	/^		T y = 0;$/;"	m	struct:olc::v2d_generic	typeref:typename:T
+~Decal	include/olcPixelGameEngine.h	/^	Decal::~Decal()$/;"	f	class:olc::Decal
+~GDIPlusStartup	include/olcPixelGameEngine.h	/^		~GDIPlusStartup()$/;"	f	class:olc::GDIPlusStartup
+~PixelGameEngine	include/olcPixelGameEngine.h	/^	PixelGameEngine::~PixelGameEngine()$/;"	f	class:olc::PixelGameEngine
+~ResourcePack	include/olcPixelGameEngine.h	/^	ResourcePack::~ResourcePack() { baseFile.close(); }$/;"	f	class:olc::ResourcePack
+~Sprite	include/olcPixelGameEngine.h	/^	Sprite::~Sprite()$/;"	f	class:olc::Sprite
