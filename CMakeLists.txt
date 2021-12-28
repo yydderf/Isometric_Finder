@@ -12,7 +12,7 @@ find_package(PNG REQUIRED)
 
 include_directories(${ROOT_SOURCE_DIR}/include ${X11_INCLUDE_DIR} ${OPENGL_INCLUDE_DIR} ${PNG_INCLUDE_DIR})
 
-set(SOURCES src/Isometric_Finder.cpp)
+set(SOURCES src/Isometric_Finder.cpp src/Algorithm.cpp)
 
 # Options
 set(CMAKE_CXX_STANDARD 17)

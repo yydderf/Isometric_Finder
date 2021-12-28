@@ -1,13 +1,22 @@
 #define OLC_PGE_APPLICATION
 #include "../include/olcPixelGameEngine.h"
+#include "../include/Algorithm.h"
 
-// Override base class with your custom functionality
-class IsometricDemo : public olc::PixelGameEngine
+#ifdef _WIN32
+#include <Windows.h>
+#else
+#include <unistd.h>
+#endif
+
+#include <time.h>
+#include <thread>
+
+class Isometric : public olc::PixelGameEngine
 {
 public:
-	IsometricDemo()
+	Isometric()
 	{
-		sAppName = "Coding Quickie: Isometric Tiles";
+		sAppName = "Isometric_Finder";
 	}
 
 private:
@@ -25,6 +34,15 @@ private:
 
 	// Pointer to create 2D world array
 	int *pWorld = nullptr;
+
+    // Locker for keyboard / mouse input
+    bool signalLock = false;
+
+    olc::vi2d prevMouseHeldPos = { -1, -1 };
+    int touchDownTileState;
+    int prevTime = 0;
+    int srcPos = -1;
+    int dstPos = -1;
 
 public:
 	bool OnUserCreate() override
@@ -66,15 +84,75 @@ public:
 		if (col == olc::GREEN) vSelected += {+0, +1};
 		if (col == olc::YELLOW) vSelected += {+1, +0};
 
-		// Handle mouse click to toggle if a tile is visible or not
-		if (GetMouse(0).bPressed)
-		{
-			// Guard array boundary
-			if (vSelected.x >= 0 && vSelected.x < vWorldSize.x && vSelected.y >= 0 && vSelected.y < vWorldSize.y)
-				++pWorld[vSelected.y * vWorldSize.x + vSelected.x] %= 6;
-		}
+        // [TODO]
+        // Done. held drawing
+        // Done. set toggle for each tile
 
-        // GetMouse 0: Left, 1: Right, 2: Middle
+        // obstacle -- click
+        if (GetMouse(0).bPressed) {
+            if (vSelected.x >= 0 && vSelected.x < vWorldSize.x && vSelected.y >= 0 && vSelected.y < vWorldSize.y && !signalLock) 
+                touchDownTileState = !pWorld[vSelected.y * vWorldSize.x + vSelected.x];
+        }
+
+        // obstacle -- held
+        if (GetMouse(0).bHeld && (vSelected.x != prevMouseHeldPos.x || vSelected.y != prevMouseHeldPos.y)) {
+            if (vSelected.x >= 0 && vSelected.x < vWorldSize.x && vSelected.y >= 0 && vSelected.y < vWorldSize.y && !signalLock) {
+                int curr = vSelected.y * vWorldSize.x + vSelected.x;
+                // erase only the obstacle
+                if (pWorld[curr] <= 1) pWorld[curr] = touchDownTileState;
+                prevMouseHeldPos = vSelected;
+            }
+        }
+
+        // src
+        if (GetMouse(1).bPressed)
+        {
+            if (vSelected.x >= 0 && vSelected.x < vWorldSize.x && vSelected.y >= 0 && vSelected.y < vWorldSize.y && !signalLock) {
+                // toggle
+                if (srcPos == vSelected.y * vWorldSize.x + vSelected.x) {
+                    pWorld[srcPos] = !pWorld[srcPos] * 4;
+                    if (pWorld[srcPos] == 0) srcPos = -1;
+                } else {
+                    if (srcPos != -1) pWorld[srcPos] = 0;
+                    srcPos = vSelected.y * vWorldSize.x + vSelected.x;
+                    pWorld[srcPos] = 4;
+                }
+            }
+        }
+
+        // dst
+        if (GetMouse(2).bPressed)
+        {
+            if (vSelected.x >= 0 && vSelected.x < vWorldSize.x && vSelected.y >= 0 && vSelected.y < vWorldSize.y && !signalLock) {
+                // toggle
+                if (dstPos == vSelected.y * vWorldSize.x + vSelected.x) {
+                    pWorld[dstPos] = !pWorld[dstPos] * 5;
+                    if (pWorld[dstPos] == 0) dstPos = -1;
+                } else {
+                    if (dstPos != -1) pWorld[dstPos] = 0;
+                    dstPos = vSelected.y * vWorldSize.x + vSelected.x;
+                    pWorld[dstPos] = 5;
+                }
+            }
+        }
+
+        // [TODO]
+        // do the calculation and set the value for the tiles in each iteration
+        // Done. better do it in pthread
+        if (GetKey(olc::Key::S).bPressed) {
+            if (srcPos != -1 && dstPos != -1 && !signalLock) {
+                std::cout << "Solving" << std::endl;
+                Solve(1);
+            }
+        }
+
+        if (GetKey(olc::Key::R).bPressed) {
+            if (!signalLock) {
+                std::cout << "Resetting" << std::endl;
+                for (int i = 0; i < vWorldSize.x * vWorldSize.y; i++) pWorld[i] = 0;
+                srcPos = -1; dstPos = -1;
+            }
+        }
 						
 		// Labmda function to convert "world" coordinate into screen space
 		auto ToScreen = [&](int x, int y)
@@ -88,6 +166,8 @@ public:
 		
 		// Draw World - has binary transparancy so enable masking
 		SetPixelMode(olc::Pixel::MASK);
+
+        if (time(NULL) - prevTime > 0) printMap();
 
 		// (0,0) is at top, defined by vOrigin, so draw from top to bottom
 		// to ensure tiles closest to camera are drawn last
@@ -124,7 +204,7 @@ public:
 					// Water
 					DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 3 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
 					break;
-				}			
+				}
 			}
 		}
 
@@ -149,12 +229,47 @@ public:
 		DrawString(4, 24, "Selected: " + std::to_string(vSelected.x) + ", " + std::to_string(vSelected.y), olc::BLACK);
 		return true;
 	}
+
+    void Solve(int algorithm)
+    {
+        signalLock = true;
+        Algorithm *al = new Algorithm(pWorld, vWorldSize.x * vWorldSize.y, vWorldSize.x, srcPos, dstPos);
+        std::cout << "Solving using DFS" << std::endl;
+        std::thread (&Algorithm::DFS, al).detach();
+        /* switch (algorithm) {
+            case 0:
+                std::cout << "Solving using A*" << std::endl;
+                break;
+            case 1:
+                std::cout << "Solving using DFS" << std::endl;
+                std::thread th(&Algorithm::DFS, al);
+                break;
+            case 2:
+                std::cout << "Solving using BFS" << std::endl;
+                break;
+        } */
+        signalLock = false;
+    }
+
+    void printMap()
+    {
+		for (int y = 0; y < vWorldSize.y; y++)
+		{
+			for (int x = 0; x < vWorldSize.x; x++)
+			{
+                std::cout << pWorld[y*vWorldSize.x+x] << " ";
+            }
+            std::cout << std::endl;
+        }
+        std::cout << std::endl;
+        prevTime = time(NULL);
+    }
 };
 
 
 int main()
 {
-	IsometricDemo demo;
+	Isometric demo;
 	if (demo.Construct(512, 480, 2, 2))
 		demo.Start();
 	return 0;

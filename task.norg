@@ -1,0 +1,21 @@
+@document.meta
+    title: task
+    description: 
+    authors: ydderf
+    categories: 
+    created: 2021-12-28
+    version: 0.0.9
+@end
+
+* TODO
+ ** Algorithm
+    - [x] DFS 12/28
+    - [ ] BFS
+    - [ ] A*
+ ** Sprite
+    - [ ] 3D
+    - [ ] Custom Image
+ ** Resources Watchdog
+    - [ ] Lines of Instruction
+    - [ ] Time of Execution
+    - [ ] CPU / RAM Usage graph
