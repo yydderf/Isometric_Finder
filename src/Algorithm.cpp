@@ -4,13 +4,14 @@
 
 #include "../include/Algorithm.h"
 
-Algorithm::Algorithm(int *matrix, int size, int xlen, int src, int dst)
+Algorithm::Algorithm(int *matrix, int size, int xlen, int src, int dst, bool *signalLock)
 {
     pWorld = matrix;
     pWorldSize = size;
     xLen = xlen;
     Src = src;
     Dst = dst;
+    lock = signalLock;
 }
 
 Algorithm::~Algorithm()
@@ -21,6 +22,7 @@ Algorithm::~Algorithm()
 void
 Algorithm::DFS()
 {
+    *lock = true;
     bool *vis = new bool[pWorldSize];
     std::fill(vis, vis+pWorldSize, false);
 
@@ -47,6 +49,7 @@ Algorithm::DFS()
         if ((curr + xLen) < pWorldSize) v.push_back(curr + xLen);
         if ((curr + 1) % xLen != 0)     v.push_back(curr + 1);
     }
+    *lock = false;
 }
 
 bool

@@ -2,7 +2,7 @@
 
 class Algorithm {
 public:
-    Algorithm(int *matrix, int size, int xlen, int src, int dst);
+    Algorithm(int *matrix, int size, int xlen, int src, int dst, bool *signalLock);
     ~Algorithm();
     void DFS();
     void BFS();
@@ -14,4 +14,5 @@ private:
     int xLen;
     int Src;
     int Dst;
+    bool *lock;
 };
