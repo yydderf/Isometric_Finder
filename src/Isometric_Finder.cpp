@@ -10,6 +10,7 @@
 
 #include <time.h>
 #include <thread>
+#include <future>
 
 class Isometric : public olc::PixelGameEngine
 {
@@ -31,6 +32,7 @@ private:
 
 	// Sprite that holds all imagery
 	olc::Sprite *sprIsom = nullptr;
+    olc::Sprite *sprEkko = nullptr;
 
 	// Pointer to create 2D world array
 	int *pWorld = nullptr;
@@ -41,6 +43,7 @@ private:
     bool keyToggled = false;
 
     Algorithm *al = nullptr;
+    int nsteps = 0;
 
     olc::vi2d prevMouseHeldPos = { -1, -1 };
     int touchDownTileState;
@@ -52,7 +55,9 @@ public:
 	bool OnUserCreate() override
 	{
 		// Load sprites used in demonstration
-		sprIsom = new olc::Sprite("../res/isometric_demo.png");
+		// sprIsom = new olc::Sprite("../res/isometric_demo.png");
+		sprIsom = new olc::Sprite("../res/texture.png");
+        sprEkko = new olc::Sprite("../res/ekko.png");
 
 		// Create empty world
 		pWorld = new int[vWorldSize.x * vWorldSize.y]{ 0 };
@@ -153,14 +158,20 @@ public:
             }
 
             if (GetKey(olc::Key::R).bPressed) {
+                delete al;
                 std::cout << "Resetting" << std::endl;
                 for (int i = 0; i < vWorldSize.x * vWorldSize.y; i++) pWorld[i] = 0;
                 srcPos = -1; dstPos = -1;
+                nsteps = 0;
             }
 
             if (GetKey(olc::Key::T).bPressed) {
                 keyToggled = !keyToggled;
                 std::cout << "Keybindings toggled" << std::endl;
+            }
+
+            if (GetKey(olc::Key::W).bPressed) {
+                // std::thread (&Isometric::Rewind, this).detach();
             }
         }
 						
@@ -192,27 +203,43 @@ public:
 				{
 				case 0:
 					// Invisble Tile
-					DrawPartialSprite(vWorld.x, vWorld.y, sprIsom, 1 * vTileSize.x, 0, vTileSize.x, vTileSize.y);
+					/* DrawPartialSprite(vWorld.x, vWorld.y, sprIsom, 1 * vTileSize.x, 0, vTileSize.x, vTileSize.y);
+					break; */
+					DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 0 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
 					break;
 				case 1:
-					// Visible Tile
-					DrawPartialSprite(vWorld.x, vWorld.y, sprIsom, 2 * vTileSize.x, 0, vTileSize.x, vTileSize.y);
+                    // obstacle
+                    // barren land
+					/* DrawPartialSprite(vWorld.x, vWorld.y, sprIsom, 2 * vTileSize.x, 0, vTileSize.x, vTileSize.y);
+					break; */
+					DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 1 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
 					break;
 				case 2:
 					// Tree
-					DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 0 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
+					DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 2 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
 					break;
 				case 3:
-					// Spooky Tree
-					DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 1 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
+                    // Forward Path
+					DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 2 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
+                    // DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprEkko, 3 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
 					break;
 				case 4:
 					// Beach
-					DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 2 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
+					/* DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 2 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
+					break; */
+					DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 3 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
+                    // DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprEkko, 0 * vTileSize.x, 0, vTileSize.x, vTileSize.y * 2);
 					break;
 				case 5:
 					// Water
-					DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 3 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
+					/* DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 3 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
+					break; */
+					DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 4 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
+                    // DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprEkko, 1 * vTileSize.x, 0, vTileSize.x, vTileSize.y * 2);
+					break;
+                case 6:
+                    // Rewind Path
+                    DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprEkko, 6 * vTileSize.x, 0, vTileSize.x, vTileSize.y * 2);
 					break;
 				}
 			}
@@ -225,7 +252,8 @@ public:
 		olc::vi2d vSelectedWorld = ToScreen(vSelected.x, vSelected.y);
 
 		// Draw "highlight" tile
-		DrawPartialSprite(vSelectedWorld.x, vSelectedWorld.y, sprIsom, 0 * vTileSize.x, 0, vTileSize.x, vTileSize.y);
+		// DrawPartialSprite(vSelectedWorld.x, vSelectedWorld.y, sprIsom, 0 * vTileSize.x, 0, vTileSize.x, vTileSize.y);
+		DrawPartialSprite(vSelectedWorld.x, vSelectedWorld.y - vTileSize.y, sprIsom, 5 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
 
 		// Go back to normal drawing with no expected transparency
 		SetPixelMode(olc::Pixel::NORMAL);
@@ -238,19 +266,25 @@ public:
 		DrawString(4, 14, "Cell    : " + std::to_string(vCell.x) + ", " + std::to_string(vCell.y), olc::BLACK);
 		DrawString(4, 24, "Selected: " + std::to_string(vSelected.x) + ", " + std::to_string(vSelected.y), olc::BLACK);
         DrawString(4, 54, "Press T For Keybindings", olc::BLACK);
+        DrawString(4, 64, "Finished in " + std::to_string(nsteps) + " steps", olc::BLACK);
 		return true;
 	}
 
     void Solve(int algorithm)
     {
-        signalLock = true;
         for (int i = 0; i < vWorldSize.x * vWorldSize.y; i++) {
-            if (pWorld[i] == 2) pWorld[i] = 0;
+            if (pWorld[i] == 2 || pWorld[i] == 6) pWorld[i] = 0;
         }
-        Algorithm *al = new Algorithm(pWorld, vWorldSize.x * vWorldSize.y, vWorldSize.x, srcPos, dstPos, &signalLock);
-        std::cout << "Solving using DFS" << std::endl;
+        Algorithm *al = new Algorithm(pWorld, vWorldSize.x * vWorldSize.y, vWorldSize.x, srcPos, dstPos, &signalLock, &nsteps);
         // Async would be better
-        std::thread (&Algorithm::DFS, al).detach();
+        /* std::cout << "Solving using DFS" << std::endl;
+        std::thread (&Algorithm::DFS, al).detach(); */
+        /* std::cout << "Solving using BFS" << std::endl;
+        std::thread (&Algorithm::BFS, al).detach(); */
+        std::cout << "Solving using A*" << std::endl;
+        std::thread (&Algorithm::A_Star, al).detach();
+        // std::async (&Algorithm::A_Star, al);
+
         /* switch (algorithm) {
             case 0:
                 std::cout << "Solving using A*" << std::endl;
@@ -263,7 +297,6 @@ public:
                 std::cout << "Solving using BFS" << std::endl;
                 break;
         } */
-        signalLock = false;
     }
 
     void printMap()
@@ -279,6 +312,19 @@ public:
         std::cout << std::endl;
         prevTime = time(NULL);
     }
+
+    /* void Rewind(sNode *ptr)
+    {
+        signalLock = true;
+        std::cout << "Rewinding..." << *rPtr << std::endl;
+        if (ptr != nullptr) {
+            while (ptr->parent != nullptr) {
+                pWorld[ptr->ind] = 4;
+                ptr = ptr->parent;
+            }
+        }
+        signalLock = false;
+    } */
 };
 
 
