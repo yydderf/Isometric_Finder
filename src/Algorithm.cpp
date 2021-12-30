@@ -35,7 +35,6 @@ Algorithm::DFS()
     std::vector<int> v;
     v.push_back(Src);
     while (!v.empty()) {
-        *steps += 1;
         int curr = v.back();
         v.pop_back();
 
@@ -44,11 +43,12 @@ Algorithm::DFS()
 
         vis[curr] = true;
         usleep(PATH_USLEEP);
+        *steps += 1;
         // std::cout << pWorld[curr] << std::endl;
         // change the tile
         // std::cout << curr << std::endl;
         if (curr == Dst) break;
-        if (curr != Src) pWorld[curr] = 3;
+        if (curr != Src) pWorld[curr] = 2;
 
         // push all the adjacent cells && boundary check
         if ((curr - xLen) >= 0)         v.push_back(curr - xLen);
@@ -70,13 +70,12 @@ Algorithm::BFS()
     std::vector<int> v;
     v.push_back(Src);
     while (!v.empty()) {
-        *steps += 1;
-        std::cout << "steps: " << *steps << std::endl;
         int curr = v.front();
         v.erase(v.begin());
         if (!this->isValidDFS(vis, curr)) continue;
         vis[curr] = true;
         usleep(PATH_USLEEP);
+        *steps += 1;
         if (curr == Dst) break;
         // keep the texture of Src
         if (curr != Src) pWorld[curr] = 2;
@@ -156,7 +155,6 @@ Algorithm::A_Star()
     listTBD.push_back(nodeStart);
 
     while (!listTBD.empty()) {
-        *steps += 1;
         listTBD.sort([](const sNode *lhs, const sNode *rhs){ return lhs->fGlobalGoal < rhs->fGlobalGoal; } );
 
         while (!listTBD.empty() && vis[listTBD.front()->ind])
@@ -167,6 +165,7 @@ Algorithm::A_Star()
         nodeCurr = listTBD.front();
         vis[nodeCurr->ind] = true;
         usleep(PATH_USLEEP);
+        *steps += 1;
         if (nodeCurr->ind == Dst)
             break;
         if (nodeCurr->ind != Src)
@@ -191,7 +190,7 @@ Algorithm::A_Star()
     if (nodeEnd != nullptr) {
         int offset = 0;
         sNode *ptr = nodeEnd;
-        ptr = ptr->parent;
+        if (ptr->parent != nullptr) ptr = ptr->parent;
         while (ptr->parent != nullptr) {
             usleep(PATH_USLEEP);
             pWorld[ptr->ind] = 6;

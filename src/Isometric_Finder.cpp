@@ -22,13 +22,14 @@ public:
 
 private:
 	// Number of tiles in world
-	olc::vi2d vWorldSize = { 11, 11 };
+	// olc::vi2d vWorldSize = { 11, 11 };
+    olc::vi2d vWorldSize = {22, 22};
 
 	// Size of single tile graphic
 	olc::vi2d vTileSize = { 40, 20 };
 
 	// Where to place tile (0,0) on screen (in tile size steps)
-	olc::vi2d vOrigin = { 6, 5 };
+	olc::vi2d vOrigin = { 11, 5 };
 
 	// Sprite that holds all imagery
 	olc::Sprite *sprIsom = nullptr;
@@ -44,6 +45,15 @@ private:
 
     Algorithm *al = nullptr;
     int nsteps = 0;
+    int alToggle = 0;
+
+    struct alRecord {
+        const char *recAl;
+        int recStep;
+    };
+
+    std::vector<alRecord> alRec;
+    int alRecSize = 0;
 
     olc::vi2d prevMouseHeldPos = { -1, -1 };
     int touchDownTileState;
@@ -61,6 +71,7 @@ public:
 
 		// Create empty world
 		pWorld = new int[vWorldSize.x * vWorldSize.y]{ 0 };
+
 		return true;
 	}
 
@@ -100,8 +111,10 @@ public:
         if (!signalLock) {
             // obstacle -- click
             if (GetMouse(0).bPressed) {
-                if (vSelected.x >= 0 && vSelected.x < vWorldSize.x && vSelected.y >= 0 && vSelected.y < vWorldSize.y) 
+                if (vSelected.x >= 0 && vSelected.x < vWorldSize.x && vSelected.y >= 0 && vSelected.y < vWorldSize.y) {
                     touchDownTileState = !pWorld[vSelected.y * vWorldSize.x + vSelected.x];
+                    recordReset();
+                }
             }
 
             // obstacle -- held
@@ -111,6 +124,7 @@ public:
                     // erase only the obstacle
                     if (pWorld[curr] <= 1) pWorld[curr] = touchDownTileState;
                     prevMouseHeldPos = vSelected;
+                    recordReset();
                 }
             }
 
@@ -125,9 +139,11 @@ public:
                     } else {
                         if (srcPos != -1) pWorld[srcPos] = 0;
                         srcPos = vSelected.y * vWorldSize.x + vSelected.x;
+                        if (dstPos == srcPos) dstPos = -1;
                         pWorld[srcPos] = 4;
                     }
                     clearPath();
+                    recordReset();
                 }
             }
 
@@ -142,9 +158,11 @@ public:
                     } else {
                         if (dstPos != -1) pWorld[dstPos] = 0;
                         dstPos = vSelected.y * vWorldSize.x + vSelected.x;
+                        if (srcPos == dstPos) srcPos = -1;
                         pWorld[dstPos] = 5;
                     }
                     clearPath();
+                    recordReset();
                 }
             }
 
@@ -155,7 +173,10 @@ public:
                 delete al;
                 if (srcPos != -1 && dstPos != -1) {
                     std::cout << "Solving" << std::endl;
-                    Solve(1);
+                    if (alToggle == 0)
+                        std::thread (&Isometric::runAll, this).detach();
+                    else
+                        Solve();
                 }
             }
 
@@ -174,6 +195,25 @@ public:
 
             if (GetKey(olc::Key::W).bPressed) {
                 // std::thread (&Isometric::Rewind, this).detach();
+            }
+
+            // Could be done better
+            // hash function
+            if (GetKey(olc::Key::K0).bPressed) {
+                alToggle = 0;
+            }
+            if (GetKey(olc::Key::K1).bPressed) {
+                alToggle = 1;
+            }
+            if (GetKey(olc::Key::K2).bPressed) {
+                alToggle = 2;
+            }
+            if (GetKey(olc::Key::K3).bPressed) {
+                alToggle = 3;
+            }
+
+            if (GetKey(olc::Key::ESCAPE).bPressed) {
+                return false;
             }
         }
 						
@@ -267,42 +307,99 @@ public:
 		DrawString(4, 4,  "Mouse   : " + std::to_string(vMouse.x) + ", " + std::to_string(vMouse.y), olc::BLACK);
 		DrawString(4, 14, "Cell    : " + std::to_string(vCell.x) + ", " + std::to_string(vCell.y), olc::BLACK);
 		DrawString(4, 24, "Selected: " + std::to_string(vSelected.x) + ", " + std::to_string(vSelected.y), olc::BLACK);
-        DrawString(4, 54, "Press T For Keybindings", olc::BLACK);
-        DrawString(4, 64, "Finished in " + std::to_string(nsteps) + " steps", olc::BLACK);
+        DrawString(4, 54, "Finished in " + std::to_string(nsteps) + " steps", olc::BLACK);
+
+        DrawString(4, 64, "Algorithm: ", olc::BLACK);
+        DrawString(94, 64, alToggle == 0 ? "*"   :
+                           alToggle == 1 ? "A*"  :
+                           alToggle == 2 ? "DFS" :
+                           alToggle == 3 ? "BFS" : "", olc::BLACK);
+        DrawString(4, 84, "Previous run:", olc::BLACK);
+        if (alRecSize)
+            alRec[alRecSize-1].recStep = nsteps;
+        for (int i = 0; i < alRecSize; i++) {
+            int curr = alRecSize - i - 1;
+            DrawString(44, i*10+94, std::to_string(i+1) + ": " + alRec[curr].recAl + " -- " + std::to_string((alRec[curr].recStep)), olc::BLACK);
+        }
+        // DrawString(304, 4, "Press T For Keybindings", olc::BLACK);
 		return true;
 	}
 
-    void Solve(int algorithm)
+    void Solve()
     {
-        clearPath();
         Algorithm *al = new Algorithm(pWorld, vWorldSize.x * vWorldSize.y, vWorldSize.x, srcPos, dstPos, &signalLock, &nsteps);
+        alRecord tmpRec;
+        switch (alToggle) {
+            case 1:
+                tmpRec.recAl = "A*";
+                break;
+            case 2:
+                tmpRec.recAl = "DFS";
+                break;
+            case 3:
+                tmpRec.recAl = "BFS";
+                break;
+            default:
+                break;
+        }
+        while (alRecSize > 2) {
+            alRec.erase(alRec.begin());
+            alRecSize -= 1;
+        }
+        alRec.push_back(tmpRec);
+        alRecSize += 1;
         // Async would be better
         /* std::cout << "Solving using DFS" << std::endl;
         std::thread (&Algorithm::DFS, al).detach(); */
         /* std::cout << "Solving using BFS" << std::endl;
         std::thread (&Algorithm::BFS, al).detach(); */
-        std::cout << "Solving using A*" << std::endl;
-        std::thread (&Algorithm::A_Star, al).detach();
+        /* std::cout << "Solving using A*" << std::endl;
+        std::thread (&Algorithm::A_Star, al).detach(); */
         // std::async (&Algorithm::A_Star, al);
 
-        /* switch (algorithm) {
+        clearPath();
+        switch (alToggle) {
             case 0:
-                std::cout << "Solving using A*" << std::endl;
+                std::cout << "Cycle through all algorithms"<< std::endl;
                 break;
             case 1:
-                std::cout << "Solving using DFS" << std::endl;
-                std::thread th(&Algorithm::DFS, al);
+                std::cout << "Solving by A*"<< std::endl;
+                std::thread (&Algorithm::A_Star, al).detach();
                 break;
             case 2:
-                std::cout << "Solving using BFS" << std::endl;
+                std::cout << "Solving by DFS" << std::endl;
+                std::thread (&Algorithm::DFS, al).detach();
                 break;
-        } */
+            case 3:
+                std::cout << "Solving using BFS" << std::endl;
+                std::thread (&Algorithm::BFS, al).detach();
+                break;
+            default:
+                break;
+        }
+    }
+
+    void runAll()
+    {
+        // cycle through all algorithms
+        for (int i = 1; i <= 3; i++) {
+            if (!signalLock) {
+                alToggle = i;
+                Solve();
+                signalLock = true;
+            }
+            while (signalLock);
+        }
+        alToggle = 0;
     }
 
     void clearPath()
     {
+        std::cout << "Clearing Path" << std::endl;
         for (int i = 0; i < vWorldSize.x * vWorldSize.y; i++) {
-            if (pWorld[i] == 2 || pWorld[i] == 6) pWorld[i] = 0;
+            if (pWorld[i] == 2 || pWorld[i] == 6) {
+                pWorld[i] = 0;
+            }
         }
     }
 
@@ -318,6 +415,12 @@ public:
         }
         std::cout << std::endl;
         prevTime = time(NULL);
+    }
+
+    void recordReset()
+    {
+        alRec.clear();
+        alRecSize = 0;
     }
 
     /* void Rewind(sNode *ptr)
@@ -338,7 +441,11 @@ public:
 int main()
 {
 	Isometric demo;
-	if (demo.Construct(512, 480, 2, 2))
-		demo.Start();
+	/* if (demo.Construct(512, 480, 2, 2))
+		demo.Start(); */
+    /* if (demo.Construct(720, 480, 2, 2))
+        demo.Start(); */
+    if (demo.Construct(920, 540, 2, 2))
+        demo.Start();
 	return 0;
 }
