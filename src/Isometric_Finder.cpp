@@ -127,6 +127,7 @@ public:
                         srcPos = vSelected.y * vWorldSize.x + vSelected.x;
                         pWorld[srcPos] = 4;
                     }
+                    clearPath();
                 }
             }
 
@@ -143,6 +144,7 @@ public:
                         dstPos = vSelected.y * vWorldSize.x + vSelected.x;
                         pWorld[dstPos] = 5;
                     }
+                    clearPath();
                 }
             }
 
@@ -272,9 +274,7 @@ public:
 
     void Solve(int algorithm)
     {
-        for (int i = 0; i < vWorldSize.x * vWorldSize.y; i++) {
-            if (pWorld[i] == 2 || pWorld[i] == 6) pWorld[i] = 0;
-        }
+        clearPath();
         Algorithm *al = new Algorithm(pWorld, vWorldSize.x * vWorldSize.y, vWorldSize.x, srcPos, dstPos, &signalLock, &nsteps);
         // Async would be better
         /* std::cout << "Solving using DFS" << std::endl;
@@ -297,6 +297,13 @@ public:
                 std::cout << "Solving using BFS" << std::endl;
                 break;
         } */
+    }
+
+    void clearPath()
+    {
+        for (int i = 0; i < vWorldSize.x * vWorldSize.y; i++) {
+            if (pWorld[i] == 2 || pWorld[i] == 6) pWorld[i] = 0;
+        }
     }
 
     void printMap()
