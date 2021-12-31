@@ -6,7 +6,7 @@
 
 #include "../include/Algorithm.h"
 
-#define PATH_USLEEP 20000
+#define PATH_USLEEP 5000
 
 Algorithm::Algorithm(int *matrix, int size, int xlen, int src, int dst, bool *signalLock, int *nsteps)
 {

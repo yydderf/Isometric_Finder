@@ -8,9 +8,17 @@
 #include <unistd.h>
 #endif
 
+// animation
 #include <time.h>
+// threading
 #include <thread>
 #include <future>
+// file io
+#include <fstream>
+// file removal
+#include <cstdio>
+// random
+#include <cstdlib>
 
 class Isometric : public olc::PixelGameEngine
 {
@@ -41,11 +49,9 @@ private:
     // Locker for keyboard / mouse input
     bool signalLock = false;
 
-    bool keyToggled = false;
 
     Algorithm *al = nullptr;
     int nsteps = 0;
-    int alToggle = 0;
 
     struct alRecord {
         const char *recAl;
@@ -54,6 +60,8 @@ private:
 
     std::vector<alRecord> alRec;
     int alRecSize = 0;
+    // A* / DFS / BFS
+    int alCount = 3;
 
     olc::vi2d prevMouseHeldPos = { -1, -1 };
     int touchDownTileState;
@@ -61,6 +69,13 @@ private:
     int srcPos = -1;
     int dstPos = -1;
 
+    const char *outFileName = "records.txt";
+    std::ofstream ofd{outFileName, std::ios::out | std::ios::app};
+
+    bool keyToggled = false;
+    bool saveToggle = false;
+    bool autoRunToggle = false;
+    int alToggle = 0;
 public:
 	bool OnUserCreate() override
 	{
@@ -107,6 +122,22 @@ public:
         // [TODO]
         // Done. held drawing
         // Done. set toggle for each tile
+        if (GetKey(olc::Key::S).bPressed) {
+            saveToggle = !saveToggle;
+            if (saveToggle) {
+                std::cout << "save toggled" << std::endl;
+            }
+        }
+        
+        if (GetKey(olc::Key::ESCAPE).bPressed) {
+            exitHandler(EXIT_SUCCESS);
+        }
+
+        if (signalLock) {
+            if (GetKey(olc::Key::P).bPressed) {
+                autoRunToggle = !autoRunToggle;
+            }
+        }
 
         if (!signalLock) {
             // obstacle -- click
@@ -183,6 +214,7 @@ public:
             if (GetKey(olc::Key::R).bPressed) {
                 delete al;
                 std::cout << "Resetting" << std::endl;
+                recordReset();
                 for (int i = 0; i < vWorldSize.x * vWorldSize.y; i++) pWorld[i] = 0;
                 srcPos = -1; dstPos = -1;
                 nsteps = 0;
@@ -193,8 +225,10 @@ public:
                 std::cout << "Keybindings toggled" << std::endl;
             }
 
-            if (GetKey(olc::Key::W).bPressed) {
-                // std::thread (&Isometric::Rewind, this).detach();
+
+            if (GetKey(olc::Key::P).bPressed) {
+                autoRunToggle = !autoRunToggle;
+                std::thread (&Isometric::autoRunAll, this).detach();
             }
 
             // Could be done better
@@ -212,9 +246,6 @@ public:
                 alToggle = 3;
             }
 
-            if (GetKey(olc::Key::ESCAPE).bPressed) {
-                return false;
-            }
         }
 						
 		// Labmda function to convert "world" coordinate into screen space
@@ -342,7 +373,7 @@ public:
             default:
                 break;
         }
-        while (alRecSize > 2) {
+        while (alRecSize > alCount - 1) {
             alRec.erase(alRec.begin());
             alRecSize -= 1;
         }
@@ -382,10 +413,11 @@ public:
     void runAll()
     {
         // cycle through all algorithms
-        for (int i = 1; i <= 3; i++) {
+        for (int i = 1; i <= alCount; i++) {
             if (!signalLock) {
                 alToggle = i;
                 Solve();
+                // lock immediately in case of race condition
                 signalLock = true;
             }
             while (signalLock);
@@ -423,24 +455,57 @@ public:
         alRecSize = 0;
     }
 
-    /* void Rewind(sNode *ptr)
+    void exitHandler(int state)
     {
-        signalLock = true;
-        std::cout << "Rewinding..." << *rPtr << std::endl;
-        if (ptr != nullptr) {
-            while (ptr->parent != nullptr) {
-                pWorld[ptr->ind] = 4;
-                ptr = ptr->parent;
+        std::ifstream ifd{outFileName};
+        // remove output file if it is empty
+        if (ifd.peek() == std::ifstream::traits_type::eof()) {
+            if (remove(outFileName) != 0) {
+                perror("Failed writing to file.");
             }
         }
-        signalLock = false;
-    } */
+        exit(state);
+    }
+
+    void autoRunAll()
+    {
+        if (srcPos != -1 && dstPos != -1) {
+            pWorld[srcPos] = 0;
+            pWorld[dstPos] = 0;
+        }
+        while (true) {
+            std::cout << "starting a new round" << std::endl;
+            do {
+                std::cout << "setting up src / dst" << std::endl;
+                srcPos = rand() % (vWorldSize.x * vWorldSize.y);
+                dstPos = rand() % (vWorldSize.x * vWorldSize.y);
+            } while (srcPos == dstPos);
+            pWorld[srcPos] = 4;
+            pWorld[dstPos] = 5;
+            std::thread th(&Isometric::runAll, this);
+            th.join();
+            if (saveToggle) {
+                for (int i = 0; i < alCount; i++) {
+                    if (i) {
+                        ofd << ",";
+                    }
+                    ofd << alRec[i].recStep;
+                }
+                ofd << std::endl;
+            }
+            usleep(50000);
+            if (!autoRunToggle) break;
+            pWorld[srcPos] = 0;
+            pWorld[dstPos] = 0;
+        }
+    }
 };
 
 
 int main()
 {
 	Isometric demo;
+    srand(time(NULL));
 	/* if (demo.Construct(512, 480, 2, 2))
 		demo.Start(); */
     /* if (demo.Construct(720, 480, 2, 2))
