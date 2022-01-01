@@ -1,6 +1,9 @@
 #pragma once
 #include <vector>
 
+#define CLUSTER_NUM 10
+#define CLUSTER_SIZE 10
+
 class Algorithm {
 public:
     Algorithm(int *matrix, int size, int xlen, int src, int dst, bool *signalLock, int *nsteps);
@@ -9,6 +12,8 @@ public:
     void BFS();
     void A_Star();
     bool isValidDFS(bool*, int);
+    // [TODO]
+    void ObstacleGen();
 private:
     int *pWorld = nullptr;
     int pWorldSize;

@@ -62,6 +62,7 @@ private:
     int alRecSize = 0;
     // A* / DFS / BFS
     int alCount = 3;
+    int obstacleCount = 0;
 
     olc::vi2d prevMouseHeldPos = { -1, -1 };
     int touchDownTileState;
@@ -69,7 +70,7 @@ private:
     int srcPos = -1;
     int dstPos = -1;
 
-    const char *outFileName = "records.txt";
+    const char *outFileName = "../scripts/records.txt";
     std::ofstream ofd{outFileName, std::ios::out | std::ios::app};
 
     bool keyToggled = false;
@@ -153,7 +154,9 @@ public:
                 if (vSelected.x >= 0 && vSelected.x < vWorldSize.x && vSelected.y >= 0 && vSelected.y < vWorldSize.y) {
                     int curr = vSelected.y * vWorldSize.x + vSelected.x;
                     // erase only the obstacle
-                    if (pWorld[curr] <= 1) pWorld[curr] = touchDownTileState;
+                    if (pWorld[curr] <= 1) {
+                        pWorld[curr] = touchDownTileState;
+                    }
                     prevMouseHeldPos = vSelected;
                     recordReset();
                 }
@@ -265,6 +268,8 @@ public:
 
 		// (0,0) is at top, defined by vOrigin, so draw from top to bottom
 		// to ensure tiles closest to camera are drawn last
+        // reset obstacle count every time
+        obstacleCount = 0;
 		for (int y = 0; y < vWorldSize.y; y++)
 		{
 			for (int x = 0; x < vWorldSize.x; x++)
@@ -286,6 +291,7 @@ public:
 					/* DrawPartialSprite(vWorld.x, vWorld.y, sprIsom, 2 * vTileSize.x, 0, vTileSize.x, vTileSize.y);
 					break; */
 					DrawPartialSprite(vWorld.x, vWorld.y - vTileSize.y, sprIsom, 1 * vTileSize.x, 1 * vTileSize.y, vTileSize.x, vTileSize.y * 2);
+                    obstacleCount++;
 					break;
 				case 2:
 					// Tree
@@ -352,6 +358,8 @@ public:
             int curr = alRecSize - i - 1;
             DrawString(44, i*10+94, std::to_string(i+1) + ": " + alRec[curr].recAl + " -- " + std::to_string((alRec[curr].recStep)), olc::BLACK);
         }
+        DrawString(4, 134, saveToggle ? "Save: Toggled" : "Save: Untoggled", olc::BLACK);
+        DrawString(4, 144, "Obstacle Count: " + std::to_string(obstacleCount), olc::BLACK);
         // DrawString(304, 4, "Press T For Keybindings", olc::BLACK);
 		return true;
 	}
@@ -469,17 +477,19 @@ public:
 
     void autoRunAll()
     {
+        int roundCnt = 0;
         if (srcPos != -1 && dstPos != -1) {
             pWorld[srcPos] = 0;
             pWorld[dstPos] = 0;
         }
         while (true) {
             std::cout << "starting a new round" << std::endl;
+            if (roundCnt % 10 == 0) srand(time(NULL));
             do {
                 std::cout << "setting up src / dst" << std::endl;
                 srcPos = rand() % (vWorldSize.x * vWorldSize.y);
                 dstPos = rand() % (vWorldSize.x * vWorldSize.y);
-            } while (srcPos == dstPos);
+            } while (srcPos == dstPos || pWorld[srcPos] != 0 || pWorld[dstPos] != 0);
             pWorld[srcPos] = 4;
             pWorld[dstPos] = 5;
             std::thread th(&Isometric::runAll, this);
@@ -497,6 +507,7 @@ public:
             if (!autoRunToggle) break;
             pWorld[srcPos] = 0;
             pWorld[dstPos] = 0;
+            roundCnt++;
         }
     }
 };

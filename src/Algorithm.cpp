@@ -3,6 +3,8 @@
 #include <list>
 #include <unistd.h>
 #include <math.h>
+#include <time.h>
+#include <cstdlib>
 
 #include "../include/Algorithm.h"
 
@@ -198,4 +200,17 @@ Algorithm::A_Star()
         }
     }
     *lock = false;
+}
+
+// [TODO]
+void
+Algorithm::ObstacleGen()
+{
+    int clusterSrc;
+    int clusterSize;
+    int clusterNum = rand() % CLUSTER_NUM;
+    while (clusterNum--) {
+        clusterSize = rand() % CLUSTER_SIZE;
+        clusterSrc = rand() % pWorldSize;
+    }
 }

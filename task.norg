@@ -9,15 +9,13 @@
 
 * TODO
  ** Algorithm
-    - [x] DFS 12/28
-    - [ ] BFS
-    - [ ] A*
+    - [x] DFS 
+    - [x] BFS
+    - [x] A*
  ** Sprite
-    - [ ] 3D
-    - [ ] Custom Image
+    - [x] 3D
+    - [x] Custom Image
  ** Resources Watchdog
     - [ ] Lines of Instruction
-    - [ ] Time of Execution
+    - [x] Steps of Execution
     - [ ] CPU / RAM Usage graph
- ** test
-    - [ ] Go
